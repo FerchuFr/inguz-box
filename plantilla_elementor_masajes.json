@@ -1,0 +1,814 @@
+{
+  "version": "0.4",
+  "title": "Landing Masajes - Inguz Box",
+  "type": "page",
+  "content": [
+    {
+      "id": "fbnmtec",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "layout": "boxed",
+        "background_background": "classic",
+        "background_color": "#000000",
+        "padding": {
+          "unit": "px",
+          "top": "15",
+          "bottom": "15",
+          "left": "20",
+          "right": "20",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "ynslx4x",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 50
+          },
+          "elements": [
+            {
+              "id": "0cr6k9x",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "INGUZ BOX | Espacio de Salud, Masajes y Bienestar",
+                "header_size": "span",
+                "align": "left",
+                "title_color": "#78B74F",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 14
+                },
+                "typography_font_weight": "700",
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "tt44fkh",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 50
+          },
+          "elements": [
+            {
+              "id": "bwc5tgb",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "📍 Morón Centro (a 2 cuadras de la estación)",
+                "header_size": "span",
+                "align": "right",
+                "title_color": "#FFFEF8",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 13
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "z7s590h",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "layout": "boxed",
+        "content_width": {
+          "unit": "px",
+          "size": 1140
+        },
+        "background_background": "classic",
+        "background_color": "#0B0F0C",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "bottom": "80",
+          "left": "20",
+          "right": "20",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "gmn6f9i",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 60,
+            "padding": {
+              "unit": "px",
+              "right": "30",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "7a3uh8q",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<span style=\"background-color: rgba(120, 183, 79, 0.15); color: #78B74F; border: 1px solid #78B74F; padding: 6px 14px; border-radius: 20px; font-weight: 700; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; display: inline-block;\">🌿 Quiromasaje & Terapias Corporales • Morón</span>"
+              }
+            },
+            {
+              "id": "w8w6my0",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Bienestar que se siente, resultados que se notan",
+                "header_size": "h1",
+                "title_color": "#FFFEF8",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 44
+                },
+                "typography_font_weight": "800",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.15
+                },
+                "margin": {
+                  "unit": "px",
+                  "top": "20",
+                  "bottom": "20",
+                  "isLinked": false
+                }
+              }
+            },
+            {
+              "id": "53fd3y8",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"color: #abb8c3; font-size: 18px; line-height: 1.6; margin-bottom: 25px;\">Sesiones personalizadas de masajes terapéuticos, descontracturantes y quiromasaje con el especialista <strong>Carlos Alberto Giosa</strong>. Aliviá dolores crónicos, liberá tensiones acumuladas y recuperá la movilidad de tu cuerpo.</p>"
+              }
+            },
+            {
+              "id": "uk0scod",
+              "elType": "widget",
+              "widgetType": "icon-list",
+              "settings": {
+                "icon_list": [
+                  {
+                    "text": "Masaje descontracturante con descompresión y alineación vertebral",
+                    "icon": {
+                      "value": "fas fa-check-circle",
+                      "library": "fa-solid"
+                    }
+                  },
+                  {
+                    "text": "Quiromasaje y masaje deportivo para recuperación muscular activa",
+                    "icon": {
+                      "value": "fas fa-check-circle",
+                      "library": "fa-solid"
+                    }
+                  },
+                  {
+                    "text": "Maderoterapia y drenaje linfático manual para bienestar corporal",
+                    "icon": {
+                      "value": "fas fa-check-circle",
+                      "library": "fa-solid"
+                    }
+                  }
+                ],
+                "icon_color": "#78B74F",
+                "text_color": "#FFFEF8",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 15
+                },
+                "space_between": {
+                  "unit": "px",
+                  "size": 12
+                },
+                "margin": {
+                  "unit": "px",
+                  "bottom": "35",
+                  "isLinked": false
+                }
+              }
+            },
+            {
+              "id": "lk4lysw",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "SOLICITAR TURNO POR WHATSAPP",
+                "link": {
+                  "url": "https://wa.me/5491135713432?text=Hola%20Carlos,%20vi%20la%20p%C3%A1gina%20de%20masajes%20de%20Inguz%20Box%20y%20quiero%20consultar%20por%20un%20turno",
+                  "is_external": true,
+                  "nofollow": false
+                },
+                "size": "lg",
+                "button_text_color": "#000000",
+                "background_color": "#78B74F",
+                "button_background_hover_color": "#8cd15e",
+                "button_text_color_hover": "#000000",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_weight": "800",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 16
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "8",
+                  "bottom": "8",
+                  "left": "8",
+                  "right": "8",
+                  "isLinked": true
+                },
+                "button_box_shadow_box_shadow_type": "yes",
+                "button_box_shadow_box_shadow": {
+                  "horizontal": 0,
+                  "vertical": 8,
+                  "blur": 20,
+                  "spread": 0,
+                  "color": "rgba(120, 183, 79, 0.4)"
+                }
+              }
+            },
+            {
+              "id": "zul6n02",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"color: #676767; font-size: 13px; margin-top: 12px;\">⚡ Respuesta en el día • Gabinete privado y climatizado en Morón</p>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "kktmh2b",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 40,
+            "align_items": "center"
+          },
+          "elements": [
+            {
+              "id": "9hsbmwn",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "\n<div style=\"background: linear-gradient(145deg, #162018 0%, #1a1a1a 100%); border: 2px solid #78B74F; border-radius: 16px; padding: 25px; text-align: center; box-shadow: 0 20px 40px rgba(0,0,0,0.5);\">\n  <div style=\"display: inline-block; padding: 4px 14px; background: #78B74F; color: #000; font-weight: 800; font-size: 12px; border-radius: 20px; text-transform: uppercase; margin-bottom: 15px;\">Especialista Certificado</div>\n  <h3 style=\"color: #FFFEF8; font-size: 24px; margin-bottom: 5px; font-weight: 700;\">Carlos Alberto Giosa</h3>\n  <p style=\"color: #78B74F; font-size: 15px; margin-bottom: 15px; font-weight: 600;\">Quiromasaje & Masaje Deportivo / Terapéutico</p>\n  <p style=\"color: #abb8c3; font-size: 14px; line-height: 1.5; margin-bottom: 20px;\">Técnicas avanzadas de descompresión vertebral, recuperación muscular y alivio de dolores crónicos en el espacio de salud de Inguz Box.</p>\n  <div style=\"background: rgba(0,0,0,0.4); padding: 12px; border-radius: 8px; border-left: 4px solid #78B74F; text-align: left;\">\n    <strong style=\"color: #FFFEF8; font-size: 13px; display: block;\">📍 Gabinete Presencial:</strong>\n    <span style=\"color: #A0A0A0; font-size: 13px;\">Gral. Machado 944, 1° Piso (Morón Centro)</span>\n  </div>\n</div>\n"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6rtzslk",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "layout": "boxed",
+        "content_width": {
+          "unit": "px",
+          "size": 1140
+        },
+        "background_background": "classic",
+        "background_color": "#FFFEF8",
+        "padding": {
+          "unit": "px",
+          "top": "70",
+          "bottom": "70",
+          "left": "20",
+          "right": "20",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "yjinl9e",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "cis3n2t",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Tratamientos & Terapias Disponibles",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#000000",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 36
+                },
+                "typography_font_weight": "800"
+              }
+            },
+            {
+              "id": "82s25oa",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Protocolos manuales específicos según tus necesidades físicas y estilo de vida",
+                "header_size": "p",
+                "align": "center",
+                "title_color": "#58585A",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 17
+                },
+                "margin": {
+                  "unit": "px",
+                  "top": "10",
+                  "bottom": "40",
+                  "isLinked": false
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rlpz2uo",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "layout": "boxed",
+        "content_width": {
+          "unit": "px",
+          "size": 1140
+        },
+        "background_background": "classic",
+        "background_color": "#FFFEF8",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "bottom": "70",
+          "left": "20",
+          "right": "20",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "x8t582f",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 33.33
+          },
+          "elements": [
+            {
+              "id": "7na40cb",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "\n<div style=\"background: #ffffff; border: 1px solid #e2e8f0; border-top: 5px solid #78B74F; border-radius: 12px; padding: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); min-height: 290px;\">\n  <div style=\"margin-bottom: 15px;\"><img src=\"Masajes/icono_descontracturante.png\" alt=\"Descontracturante\" style=\"width: 60px; height: 60px; border-radius: 50%;\"></div>\n  <h4 style=\"color: #000; font-size: 20px; font-weight: 700; margin-bottom: 12px;\">Masaje Descontracturante</h4>\n  <p style=\"color: #58585A; font-size: 15px; line-height: 1.6;\">Con descompresión y alineación. Alivia tensiones profundas, libera contracturas rebeldes y mejora la postura y bienestar de tu columna.</p>\n</div>\n"
+              }
+            }
+          ]
+        },
+        {
+          "id": "fmryyvb",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 33.33
+          },
+          "elements": [
+            {
+              "id": "3lpqgi9",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "\n<div style=\"background: #ffffff; border: 1px solid #e2e8f0; border-top: 5px solid #78B74F; border-radius: 12px; padding: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); min-height: 290px;\">\n  <div style=\"margin-bottom: 15px;\"><img src=\"Masajes/icono_relajante.png\" alt=\"Relajante\" style=\"width: 60px; height: 60px; border-radius: 50%;\"></div>\n  <h4 style=\"color: #000; font-size: 20px; font-weight: 700; margin-bottom: 12px;\">Masaje Relajante</h4>\n  <p style=\"color: #58585A; font-size: 15px; line-height: 1.6;\">Reduce el estrés, calma el sistema nervioso y promueve una relajación integral del cuerpo y la mente en un ambiente climatizado.</p>\n</div>\n"
+              }
+            }
+          ]
+        },
+        {
+          "id": "spxho5n",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 33.33
+          },
+          "elements": [
+            {
+              "id": "90qj6zl",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "\n<div style=\"background: #ffffff; border: 1px solid #e2e8f0; border-top: 5px solid #78B74F; border-radius: 12px; padding: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); min-height: 290px;\">\n  <div style=\"margin-bottom: 15px;\"><img src=\"Masajes/icono_maderoterapia.png\" alt=\"Maderoterapia\" style=\"width: 60px; height: 60px; border-radius: 50%;\"></div>\n  <h4 style=\"color: #000; font-size: 20px; font-weight: 700; margin-bottom: 12px;\">Maderoterapia & Drenaje</h4>\n  <p style=\"color: #58585A; font-size: 15px; line-height: 1.6;\">Moldea la figura, reactiva la microcirculación y elimina líquidos retenidos de forma 100% natural con masaje de pies y manos incluido.</p>\n</div>\n"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5o1hs4z",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "layout": "boxed",
+        "content_width": {
+          "unit": "px",
+          "size": 1140
+        },
+        "background_background": "classic",
+        "background_color": "#111412",
+        "padding": {
+          "unit": "px",
+          "top": "70",
+          "bottom": "70",
+          "left": "20",
+          "right": "20",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "cavkm5a",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "g792kcp",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "El Método de Atención en 3 Pasos",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#78B74F",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 36
+                },
+                "typography_font_weight": "800"
+              }
+            },
+            {
+              "id": "qu20mri",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Experiencia cuidada y terapéutica desde el primer minuto",
+                "header_size": "p",
+                "align": "center",
+                "title_color": "#A0A0A0",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 16
+                },
+                "margin": {
+                  "unit": "px",
+                  "top": "10",
+                  "bottom": "40",
+                  "isLinked": false
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8tw6v4y",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "layout": "boxed",
+        "content_width": {
+          "unit": "px",
+          "size": 1140
+        },
+        "background_background": "classic",
+        "background_color": "#111412",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "bottom": "70",
+          "left": "20",
+          "right": "20",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "knalibw",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 33.33
+          },
+          "elements": [
+            {
+              "id": "8rzh76e",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "\n<div style=\"background: rgba(255,255,255,0.03); border: 1px solid rgba(120, 183, 79, 0.3); border-radius: 12px; padding: 30px; text-align: center;\">\n  <span style=\"display: inline-block; width: 44px; height: 44px; line-height: 44px; border-radius: 50%; background: #78B74F; color: #000; font-weight: 800; font-size: 20px; margin-bottom: 15px;\">1</span>\n  <h4 style=\"color: #FFFEF8; font-size: 20px; font-weight: 700; margin-bottom: 10px;\">Evaluación & Diagnóstico</h4>\n  <p style=\"color: #A0A0A0; font-size: 14px; line-height: 1.6;\">Conversamos sobre tus molestias, contracturas, posturas habituales o sobrecargas de entrenamiento para definir el tratamiento.</p>\n</div>\n"
+              }
+            }
+          ]
+        },
+        {
+          "id": "tueml1c",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 33.33
+          },
+          "elements": [
+            {
+              "id": "mpu4pqd",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "\n<div style=\"background: rgba(255,255,255,0.03); border: 1px solid rgba(120, 183, 79, 0.3); border-radius: 12px; padding: 30px; text-align: center;\">\n  <span style=\"display: inline-block; width: 44px; height: 44px; line-height: 44px; border-radius: 50%; background: #78B74F; color: #000; font-weight: 800; font-size: 20px; margin-bottom: 15px;\">2</span>\n  <h4 style=\"color: #FFFEF8; font-size: 20px; font-weight: 700; margin-bottom: 10px;\">Sesión Personalizada</h4>\n  <p style=\"color: #A0A0A0; font-size: 14px; line-height: 1.6;\">Aplicamos las maniobras manuales, descompresión o maderoterapia con la presión ideal para lograr alivio efectivo sin dolor dañino.</p>\n</div>\n"
+              }
+            }
+          ]
+        },
+        {
+          "id": "p8me43l",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 33.33
+          },
+          "elements": [
+            {
+              "id": "irceoss",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "\n<div style=\"background: rgba(255,255,255,0.03); border: 1px solid rgba(120, 183, 79, 0.3); border-radius: 12px; padding: 30px; text-align: center;\">\n  <span style=\"display: inline-block; width: 44px; height: 44px; line-height: 44px; border-radius: 50%; background: #78B74F; color: #000; font-weight: 800; font-size: 20px; margin-bottom: 15px;\">3</span>\n  <h4 style=\"color: #FFFEF8; font-size: 20px; font-weight: 700; margin-bottom: 10px;\">Alivio & Recomendaciones</h4>\n  <p style=\"color: #A0A0A0; font-size: 14px; line-height: 1.6;\">Sentís la ligereza inmediata y te brindamos pautas sencillas de estiramiento y ergonomía para prolongar los resultados.</p>\n</div>\n"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "deqbaxp",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "layout": "boxed",
+        "content_width": {
+          "unit": "px",
+          "size": 900
+        },
+        "background_background": "classic",
+        "background_color": "#FFFEF8",
+        "padding": {
+          "unit": "px",
+          "top": "70",
+          "bottom": "70",
+          "left": "20",
+          "right": "20",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "8metbga",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "4viwtjt",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Preguntas Frecuentes",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#000000",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 34
+                },
+                "typography_font_weight": "800",
+                "margin": {
+                  "unit": "px",
+                  "bottom": "35",
+                  "isLinked": false
+                }
+              }
+            },
+            {
+              "id": "wnhbfe6",
+              "elType": "widget",
+              "widgetType": "accordion",
+              "settings": {
+                "tabs": [
+                  {
+                    "tab_title": "¿Necesito ser alumno de Inguz Box para atenderme?",
+                    "tab_content": "No, el gabinete de masajes y quiromasaje está abierto a toda la comunidad. Atendemos a cualquier persona que necesite aliviar dolores o regalarse un momento de relax."
+                  },
+                  {
+                    "tab_title": "¿Duele el masaje descontracturante o quiromasaje?",
+                    "tab_content": "No tiene que doler de forma lesiva. Carlos adapta la intensidad de forma progresiva a tu tolerancia muscular para desarmar los nudos y contracturas de manera terapéutica y placentera."
+                  },
+                  {
+                    "tab_title": "¿Cuánto dura la sesión y cómo se coordinan los turnos?",
+                    "tab_content": "Las sesiones duran aproximadamente entre 45 y 60 minutos según el tratamiento. Coordinamos los turnos directamente por WhatsApp con flexibilidad horaria."
+                  },
+                  {
+                    "tab_title": "¿Qué incluye el drenaje linfático manual?",
+                    "tab_content": "Incluye maniobras suaves y continuas de estimulación linfática más masaje complementario de pies y manos para una experiencia de alivio circulatorio completa."
+                  }
+                ],
+                "border_color": "#e2e8f0",
+                "title_color": "#000000",
+                "tab_active_color": "#78B74F",
+                "title_background": "#ffffff",
+                "content_background": "#f8fafc",
+                "content_color": "#58585A"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "msxmv4r",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "layout": "boxed",
+        "content_width": {
+          "unit": "px",
+          "size": 1000
+        },
+        "background_background": "classic",
+        "background_color": "#070A08",
+        "border_border": "solid",
+        "border_width": {
+          "unit": "px",
+          "top": 2,
+          "bottom": 2,
+          "left": 2,
+          "right": 2,
+          "isLinked": true
+        },
+        "border_color": "#78B74F",
+        "border_radius": {
+          "unit": "px",
+          "top": 16,
+          "bottom": 16,
+          "left": 16,
+          "right": 16,
+          "isLinked": true
+        },
+        "padding": {
+          "unit": "px",
+          "top": "60",
+          "bottom": "60",
+          "left": "30",
+          "right": "30",
+          "isLinked": false
+        },
+        "margin": {
+          "unit": "px",
+          "top": "20",
+          "bottom": "60",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "4bzzp1e",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "mihbbpy",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Regalate un momento de cuidado y bienestar",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#FFFEF8",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 36
+                },
+                "typography_font_weight": "800"
+              }
+            },
+            {
+              "id": "pdui05t",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Escribinos directamente al WhatsApp y coordinamos tu turno en Morón Centro.",
+                "header_size": "p",
+                "align": "center",
+                "title_color": "#A0A0A0",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 17
+                },
+                "margin": {
+                  "unit": "px",
+                  "top": "10",
+                  "bottom": "35",
+                  "isLinked": false
+                }
+              }
+            },
+            {
+              "id": "2uaxxvq",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "SOLICITAR TURNO POR WHATSAPP",
+                "link": {
+                  "url": "https://wa.me/5491135713432?text=Hola%20Carlos,%20vi%20la%20p%C3%A1gina%20de%20masajes%20de%20Inguz%20Box%20y%20quiero%20consultar%20por%20un%20turno",
+                  "is_external": true,
+                  "nofollow": false
+                },
+                "size": "xl",
+                "align": "center",
+                "button_text_color": "#000000",
+                "background_color": "#78B74F",
+                "button_background_hover_color": "#8cd15e",
+                "button_text_color_hover": "#000000",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_weight": "800",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "10",
+                  "bottom": "10",
+                  "left": "10",
+                  "right": "10",
+                  "isLinked": true
+                }
+              }
+            },
+            {
+              "id": "zbm0tm1",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"text-align: center; color: #676767; font-size: 13px; margin-top: 15px;\">Gabinete Privado Inguz Box • Gral. Machado 944, Morón • WhatsApp: +54 11 3571-3432</p>"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

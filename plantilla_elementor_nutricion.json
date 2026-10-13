@@ -1,0 +1,814 @@
+{
+  "version": "0.4",
+  "title": "Landing Nutrición - Inguz Box",
+  "type": "page",
+  "content": [
+    {
+      "id": "fbnmtec",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "layout": "boxed",
+        "background_background": "classic",
+        "background_color": "#000000",
+        "padding": {
+          "unit": "px",
+          "top": "15",
+          "bottom": "15",
+          "left": "20",
+          "right": "20",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "ynslx4x",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 50
+          },
+          "elements": [
+            {
+              "id": "0cr6k9x",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "INGUZ BOX | Espacio de Salud y Nutrición",
+                "header_size": "span",
+                "align": "left",
+                "title_color": "#78B74F",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 14
+                },
+                "typography_font_weight": "700",
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "tt44fkh",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 50
+          },
+          "elements": [
+            {
+              "id": "bwc5tgb",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "📍 Morón Centro (a 2 cuadras de la estación)",
+                "header_size": "span",
+                "align": "right",
+                "title_color": "#FFFEF8",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 13
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "z7s590h",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "layout": "boxed",
+        "content_width": {
+          "unit": "px",
+          "size": 1140
+        },
+        "background_background": "classic",
+        "background_color": "#0B0F0C",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "bottom": "80",
+          "left": "20",
+          "right": "20",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "gmn6f9i",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 60,
+            "padding": {
+              "unit": "px",
+              "right": "30",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "7a3uh8q",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<span style=\"background-color: rgba(120, 183, 79, 0.15); color: #78B74F; border: 1px solid #78B74F; padding: 6px 14px; border-radius: 20px; font-weight: 700; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; display: inline-block;\">🌿 Nutrición Clínica & Deportiva • Morón</span>"
+              }
+            },
+            {
+              "id": "w8w6my0",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Alcanzá tu mejor versión física sin dietas imposibles",
+                "header_size": "h1",
+                "title_color": "#FFFEF8",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 44
+                },
+                "typography_font_weight": "800",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.15
+                },
+                "margin": {
+                  "unit": "px",
+                  "top": "20",
+                  "bottom": "20",
+                  "isLinked": false
+                }
+              }
+            },
+            {
+              "id": "53fd3y8",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"color: #abb8c3; font-size: 18px; line-height: 1.6; margin-bottom: 25px;\">Planes 100% personalizados con la <strong>Lic. Elizabeth Merlo</strong>. Optimizá tu composición corporal, aumentá tu energía y construí hábitos sostenibles adaptados a tus gustos y horarios reales.</p>"
+              }
+            },
+            {
+              "id": "uk0scod",
+              "elType": "widget",
+              "widgetType": "icon-list",
+              "settings": {
+                "icon_list": [
+                  {
+                    "text": "Evaluación y antropometría completa de composición corporal",
+                    "icon": {
+                      "value": "fas fa-check-circle",
+                      "library": "fa-solid"
+                    }
+                  },
+                  {
+                    "text": "Estrategias de alimentación flexible (sin pasar hambre)",
+                    "icon": {
+                      "value": "fas fa-check-circle",
+                      "library": "fa-solid"
+                    }
+                  },
+                  {
+                    "text": "Atención presencial en Morón Centro y modalidad online",
+                    "icon": {
+                      "value": "fas fa-check-circle",
+                      "library": "fa-solid"
+                    }
+                  }
+                ],
+                "icon_color": "#78B74F",
+                "text_color": "#FFFEF8",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 15
+                },
+                "space_between": {
+                  "unit": "px",
+                  "size": 12
+                },
+                "margin": {
+                  "unit": "px",
+                  "bottom": "35",
+                  "isLinked": false
+                }
+              }
+            },
+            {
+              "id": "lk4lysw",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "AGENDAR CONSULTA POR WHATSAPP",
+                "link": {
+                  "url": "https://wa.me/5491135713432?text=Hola%20Lic.%20Elizabeth,%20vi%20la%20p%C3%A1gina%20y%20quiero%20consultar%20por%20un%20turno%20de%20nutrici%C3%B3n",
+                  "is_external": true,
+                  "nofollow": false
+                },
+                "size": "lg",
+                "button_text_color": "#000000",
+                "background_color": "#78B74F",
+                "button_background_hover_color": "#8cd15e",
+                "button_text_color_hover": "#000000",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_weight": "800",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 16
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "8",
+                  "bottom": "8",
+                  "left": "8",
+                  "right": "8",
+                  "isLinked": true
+                },
+                "button_box_shadow_box_shadow_type": "yes",
+                "button_box_shadow_box_shadow": {
+                  "horizontal": 0,
+                  "vertical": 8,
+                  "blur": 20,
+                  "spread": 0,
+                  "color": "rgba(120, 183, 79, 0.4)"
+                }
+              }
+            },
+            {
+              "id": "zul6n02",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"color: #676767; font-size: 13px; margin-top: 12px;\">⚡ Respuesta en el día • Consultorio privado en Morón</p>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "kktmh2b",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 40,
+            "align_items": "center"
+          },
+          "elements": [
+            {
+              "id": "9hsbmwn",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "\n                <div style=\"background: linear-gradient(145deg, #162018 0%, #1a1a1a 100%); border: 2px solid #78B74F; border-radius: 16px; padding: 25px; text-align: center; box-shadow: 0 20px 40px rgba(0,0,0,0.5);\">\n                  <div style=\"display: inline-block; padding: 4px 14px; background: #78B74F; color: #000; font-weight: 800; font-size: 12px; border-radius: 20px; text-transform: uppercase; margin-bottom: 15px;\">Profesional Certificada</div>\n                  <h3 style=\"color: #FFFEF8; font-size: 24px; margin-bottom: 5px; font-weight: 700;\">Lic. Elizabeth Merlo</h3>\n                  <p style=\"color: #78B74F; font-size: 15px; margin-bottom: 15px; font-weight: 600;\">Especialista en Nutrición Deportiva y Clínica</p>\n                  <p style=\"color: #abb8c3; font-size: 14px; line-height: 1.5; margin-bottom: 20px;\">Acompañamiento profesional en Inguz Box para que tus entrenamientos y tu salud alcancen su máximo potencial.</p>\n                  <div style=\"background: rgba(0,0,0,0.4); padding: 12px; border-radius: 8px; border-left: 4px solid #78B74F; text-align: left;\">\n                    <strong style=\"color: #FFFEF8; font-size: 13px; display: block;\">📍 Ubicación:</strong>\n                    <span style=\"color: #A0A0A0; font-size: 13px;\">Gral. Machado 944, 1° Piso (Morón Centro)</span>\n                  </div>\n                </div>\n                "
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6rtzslk",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "layout": "boxed",
+        "content_width": {
+          "unit": "px",
+          "size": 1140
+        },
+        "background_background": "classic",
+        "background_color": "#FFFEF8",
+        "padding": {
+          "unit": "px",
+          "top": "70",
+          "bottom": "70",
+          "left": "20",
+          "right": "20",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "yjinl9e",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "cis3n2t",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "¿En qué te podemos ayudar?",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#000000",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 36
+                },
+                "typography_font_weight": "800"
+              }
+            },
+            {
+              "id": "82s25oa",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Programas diseñados según tus objetivos físicos y estilo de vida",
+                "header_size": "p",
+                "align": "center",
+                "title_color": "#58585A",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 17
+                },
+                "margin": {
+                  "unit": "px",
+                  "top": "10",
+                  "bottom": "40",
+                  "isLinked": false
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rlpz2uo",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "layout": "boxed",
+        "content_width": {
+          "unit": "px",
+          "size": 1140
+        },
+        "background_background": "classic",
+        "background_color": "#FFFEF8",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "bottom": "70",
+          "left": "20",
+          "right": "20",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "x8t582f",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 33.33
+          },
+          "elements": [
+            {
+              "id": "7na40cb",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "\n                <div style=\"background: #ffffff; border: 1px solid #e2e8f0; border-top: 5px solid #78B74F; border-radius: 12px; padding: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); min-height: 290px;\">\n                  <div style=\"font-size: 36px; margin-bottom: 15px;\">🔥</div>\n                  <h4 style=\"color: #000; font-size: 20px; font-weight: 700; margin-bottom: 12px;\">Descenso de Grasa & Tonificación</h4>\n                  <p style=\"color: #58585A; font-size: 15px; line-height: 1.6;\">Optimizá tu composición corporal sin dietas líquidas ni pasar hambre. Aprendé a elegir y combinar alimentos para perder grasa cuidando tu masa muscular.</p>\n                </div>\n                "
+              }
+            }
+          ]
+        },
+        {
+          "id": "fmryyvb",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 33.33
+          },
+          "elements": [
+            {
+              "id": "3lpqgi9",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "\n                <div style=\"background: #ffffff; border: 1px solid #e2e8f0; border-top: 5px solid #78B74F; border-radius: 12px; padding: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); min-height: 290px;\">\n                  <div style=\"font-size: 36px; margin-bottom: 15px;\">⚡</div>\n                  <h4 style=\"color: #000; font-size: 20px; font-weight: 700; margin-bottom: 12px;\">Rendimiento & Masa Muscular</h4>\n                  <p style=\"color: #58585A; font-size: 15px; line-height: 1.6;\">Estrategias nutricionales pre y post entrenamiento para aumentar fuerza, energía y acelerar los tiempos de recuperación física en cada sesión.</p>\n                </div>\n                "
+              }
+            }
+          ]
+        },
+        {
+          "id": "spxho5n",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 33.33
+          },
+          "elements": [
+            {
+              "id": "90qj6zl",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "\n                <div style=\"background: #ffffff; border: 1px solid #e2e8f0; border-top: 5px solid #78B74F; border-radius: 12px; padding: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); min-height: 290px;\">\n                  <div style=\"font-size: 36px; margin-bottom: 15px;\">🥑</div>\n                  <h4 style=\"color: #000; font-size: 20px; font-weight: 700; margin-bottom: 12px;\">Reeducación & Salud Digestiva</h4>\n                  <p style=\"color: #58585A; font-size: 15px; line-height: 1.6;\">Eliminá la hinchazón, la pesadez y la ansiedad. Creá hábitos duraderos con platos ricos, sencillos de preparar y adaptados a tu vida social.</p>\n                </div>\n                "
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5o1hs4z",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "layout": "boxed",
+        "content_width": {
+          "unit": "px",
+          "size": 1140
+        },
+        "background_background": "classic",
+        "background_color": "#111412",
+        "padding": {
+          "unit": "px",
+          "top": "70",
+          "bottom": "70",
+          "left": "20",
+          "right": "20",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "cavkm5a",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "g792kcp",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "El Método de Consulta en 3 Pasos",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#78B74F",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 36
+                },
+                "typography_font_weight": "800"
+              }
+            },
+            {
+              "id": "qu20mri",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Acompañamiento cercano para garantizar adherencia y resultados reales",
+                "header_size": "p",
+                "align": "center",
+                "title_color": "#A0A0A0",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 16
+                },
+                "margin": {
+                  "unit": "px",
+                  "top": "10",
+                  "bottom": "40",
+                  "isLinked": false
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "8tw6v4y",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "layout": "boxed",
+        "content_width": {
+          "unit": "px",
+          "size": 1140
+        },
+        "background_background": "classic",
+        "background_color": "#111412",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "bottom": "70",
+          "left": "20",
+          "right": "20",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "knalibw",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 33.33
+          },
+          "elements": [
+            {
+              "id": "8rzh76e",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "\n                <div style=\"background: rgba(255,255,255,0.03); border: 1px solid rgba(120, 183, 79, 0.3); border-radius: 12px; padding: 30px; text-align: center;\">\n                  <span style=\"display: inline-block; width: 44px; height: 44px; line-height: 44px; border-radius: 50%; background: #78B74F; color: #000; font-weight: 800; font-size: 20px; margin-bottom: 15px;\">1</span>\n                  <h4 style=\"color: #FFFEF8; font-size: 20px; font-weight: 700; margin-bottom: 10px;\">Diagnóstico & Antropometría</h4>\n                  <p style=\"color: #A0A0A0; font-size: 14px; line-height: 1.6;\">Conocemos tus horarios, preferencias, nivel de actividad física y analizamos tu composición corporal para trazar el punto de partida.</p>\n                </div>\n                "
+              }
+            }
+          ]
+        },
+        {
+          "id": "tueml1c",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 33.33
+          },
+          "elements": [
+            {
+              "id": "mpu4pqd",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "\n                <div style=\"background: rgba(255,255,255,0.03); border: 1px solid rgba(120, 183, 79, 0.3); border-radius: 12px; padding: 30px; text-align: center;\">\n                  <span style=\"display: inline-block; width: 44px; height: 44px; line-height: 44px; border-radius: 50%; background: #78B74F; color: #000; font-weight: 800; font-size: 20px; margin-bottom: 15px;\">2</span>\n                  <h4 style=\"color: #FFFEF8; font-size: 20px; font-weight: 700; margin-bottom: 10px;\">Plan 100% Personalizado</h4>\n                  <p style=\"color: #A0A0A0; font-size: 14px; line-height: 1.6;\">Recibís tu plan a medida con opciones variadas, recetas sencillas, porciones claras y pautas fáciles de cumplir sin pasar hambre.</p>\n                </div>\n                "
+              }
+            }
+          ]
+        },
+        {
+          "id": "p8me43l",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 33.33
+          },
+          "elements": [
+            {
+              "id": "irceoss",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "\n                <div style=\"background: rgba(255,255,255,0.03); border: 1px solid rgba(120, 183, 79, 0.3); border-radius: 12px; padding: 30px; text-align: center;\">\n                  <span style=\"display: inline-block; width: 44px; height: 44px; line-height: 44px; border-radius: 50%; background: #78B74F; color: #000; font-weight: 800; font-size: 20px; margin-bottom: 15px;\">3</span>\n                  <h4 style=\"color: #FFFEF8; font-size: 20px; font-weight: 700; margin-bottom: 10px;\">Seguimiento & Ajustes</h4>\n                  <p style=\"color: #A0A0A0; font-size: 14px; line-height: 1.6;\">Controles evolutivos para medir progresos, resolver dudas y adaptar el plan a medida que tu cuerpo y rendimiento evolucionan.</p>\n                </div>\n                "
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "deqbaxp",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "layout": "boxed",
+        "content_width": {
+          "unit": "px",
+          "size": 900
+        },
+        "background_background": "classic",
+        "background_color": "#FFFEF8",
+        "padding": {
+          "unit": "px",
+          "top": "70",
+          "bottom": "70",
+          "left": "20",
+          "right": "20",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "8metbga",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "4viwtjt",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Preguntas Frecuentes",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#000000",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 34
+                },
+                "typography_font_weight": "800",
+                "margin": {
+                  "unit": "px",
+                  "bottom": "35",
+                  "isLinked": false
+                }
+              }
+            },
+            {
+              "id": "wnhbfe6",
+              "elType": "widget",
+              "widgetType": "accordion",
+              "settings": {
+                "tabs": [
+                  {
+                    "tab_title": "¿Necesito ser alumno de Inguz Box para atenderme?",
+                    "tab_content": "No, el consultorio de nutrición está abierto a toda la comunidad. Atendemos tanto a deportistas del gimnasio como a personas que buscan mejorar sus hábitos o salud general."
+                  },
+                  {
+                    "tab_title": "¿Cómo se coordinan los turnos?",
+                    "tab_content": "Escribinos directamente al WhatsApp y te pasamos los días y horarios disponibles para reservar tu consulta presencial en Morón Centro o virtual."
+                  },
+                  {
+                    "tab_title": "¿La consulta incluye mediciones antropométricas?",
+                    "tab_content": "Sí, en la modalidad presencial realizamos la evaluación completa para conocer tu porcentaje de grasa y masa muscular."
+                  },
+                  {
+                    "tab_title": "¿Hacen planes para personas vegetarianas o veganas?",
+                    "tab_content": "Totalmente. Adaptamos cada plan a tus elecciones alimentarias, intolerancias o patologías digestivas."
+                  }
+                ],
+                "border_color": "#e2e8f0",
+                "title_color": "#000000",
+                "tab_active_color": "#78B74F",
+                "title_background": "#ffffff",
+                "content_background": "#f8fafc",
+                "content_color": "#58585A"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "msxmv4r",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "layout": "boxed",
+        "content_width": {
+          "unit": "px",
+          "size": 1000
+        },
+        "background_background": "classic",
+        "background_color": "#070A08",
+        "border_border": "solid",
+        "border_width": {
+          "unit": "px",
+          "top": 2,
+          "bottom": 2,
+          "left": 2,
+          "right": 2,
+          "isLinked": true
+        },
+        "border_color": "#78B74F",
+        "border_radius": {
+          "unit": "px",
+          "top": 16,
+          "bottom": 16,
+          "left": 16,
+          "right": 16,
+          "isLinked": true
+        },
+        "padding": {
+          "unit": "px",
+          "top": "60",
+          "bottom": "60",
+          "left": "30",
+          "right": "30",
+          "isLinked": false
+        },
+        "margin": {
+          "unit": "px",
+          "top": "20",
+          "bottom": "60",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "4bzzp1e",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "mihbbpy",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "¿Listo para empezar a cuidar tu cuerpo?",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#FFFEF8",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 36
+                },
+                "typography_font_weight": "800"
+              }
+            },
+            {
+              "id": "pdui05t",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Escribinos directamente al WhatsApp y coordinamos tu primera consulta en el día.",
+                "header_size": "p",
+                "align": "center",
+                "title_color": "#A0A0A0",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 17
+                },
+                "margin": {
+                  "unit": "px",
+                  "top": "10",
+                  "bottom": "35",
+                  "isLinked": false
+                }
+              }
+            },
+            {
+              "id": "2uaxxvq",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "SOLICITAR TURNO POR WHATSAPP",
+                "link": {
+                  "url": "https://wa.me/5491135713432?text=Hola%20Lic.%20Elizabeth,%20vi%20la%20p%C3%A1gina%20y%20quiero%20consultar%20por%20un%20turno%20de%20nutrici%C3%B3n",
+                  "is_external": true,
+                  "nofollow": false
+                },
+                "size": "xl",
+                "align": "center",
+                "button_text_color": "#000000",
+                "background_color": "#78B74F",
+                "button_background_hover_color": "#8cd15e",
+                "button_text_color_hover": "#000000",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_weight": "800",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "10",
+                  "bottom": "10",
+                  "left": "10",
+                  "right": "10",
+                  "isLinked": true
+                }
+              }
+            },
+            {
+              "id": "zbm0tm1",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"text-align: center; color: #676767; font-size: 13px; margin-top: 15px;\">Consultorios Inguz Box • Gral. Machado 944, Morón • WhatsApp: +54 11 3571-3432</p>"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

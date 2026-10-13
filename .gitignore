@@ -1,0 +1,17 @@
+# Carpeta local para archivos privados y credenciales
+local/
+.local/
+private/
+
+# Credenciales y entornos
+.env
+.env.*
+*.key
+*.pem
+credentials.json
+
+# Archivos de sistema y logs
+*.log
+.DS_Store
+Thumbs.db
+node_modules/
