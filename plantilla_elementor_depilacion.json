@@ -1,0 +1,1453 @@
+{
+  "version": "0.4",
+  "title": "Landing Depilación - Inguz Box",
+  "type": "page",
+  "content": [
+    {
+      "id": "dptop01",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "layout": "boxed",
+        "background_background": "classic",
+        "background_color": "#000000",
+        "padding": {
+          "unit": "px",
+          "top": "15",
+          "bottom": "15",
+          "left": "20",
+          "right": "20",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "dptopcol1",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 50
+          },
+          "elements": [
+            {
+              "id": "dptopw1",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "INGUZ BOX | Espacio de Salud, Estética y Bienestar",
+                "header_size": "span",
+                "align": "left",
+                "title_color": "#78B74F",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 14
+                },
+                "typography_font_weight": "700",
+                "typography_letter_spacing": {
+                  "unit": "px",
+                  "size": 1
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "dptopcol2",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 50
+          },
+          "elements": [
+            {
+              "id": "dptopw2",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "📍 Morón Centro (a 2 cuadras de la estación)",
+                "header_size": "span",
+                "align": "right",
+                "title_color": "#FFFEF8",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 13
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dpherosec",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "layout": "boxed",
+        "content_width": {
+          "unit": "px",
+          "size": 1140
+        },
+        "background_background": "classic",
+        "background_color": "#0a0d0b",
+        "padding": {
+          "unit": "px",
+          "top": "80",
+          "bottom": "80",
+          "left": "20",
+          "right": "20",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "dpherocol1",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 60,
+            "padding": {
+              "unit": "px",
+              "right": "30",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "dpbadge",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<span style=\"background-color: rgba(120, 183, 79, 0.15); color: #78B74F; border: 1px solid #78B74F; padding: 6px 14px; border-radius: 20px; font-weight: 700; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; display: inline-block;\">✨ Depilación Definitiva Láser • Morón</span>"
+              }
+            },
+            {
+              "id": "dph1",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Piel suave, libre y sin vello: tecnología de alta potencia",
+                "header_size": "h1",
+                "title_color": "#FFFEF8",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 44
+                },
+                "typography_font_weight": "800",
+                "typography_line_height": {
+                  "unit": "em",
+                  "size": 1.15
+                },
+                "margin": {
+                  "unit": "px",
+                  "top": "20",
+                  "bottom": "20",
+                  "isLinked": false
+                }
+              }
+            },
+            {
+              "id": "dpsubtitle",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"color: #abb8c3; font-size: 18px; line-height: 1.6; margin-bottom: 25px;\">Tratamientos de depilación láser definitiva para mujeres y hombres en Inguz Box. Sistema multilongitud de onda con cabezal ultra frío que elimina el vello de raíz sin dolor, cuidando tu piel los 365 días del año.</p>"
+              }
+            },
+            {
+              "id": "dpfeatlist",
+              "elType": "widget",
+              "widgetType": "icon-list",
+              "settings": {
+                "icon_list": [
+                  {
+                    "text": "Cabezal ultra-refrigerado indoloro (-5°C de enfriamiento activo continuo)",
+                    "icon": {
+                      "value": "fas fa-check-circle",
+                      "library": "fa-solid"
+                    }
+                  },
+                  {
+                    "text": "Tecnología 4 longitudes de onda (Alexandrita, Diodo, 940nm y Nd:YAG)",
+                    "icon": {
+                      "value": "fas fa-check-circle",
+                      "library": "fa-solid"
+                    }
+                  },
+                  {
+                    "text": "Protocolos y packs exclusivos para mujeres y hombres en Morón Centro",
+                    "icon": {
+                      "value": "fas fa-check-circle",
+                      "library": "fa-solid"
+                    }
+                  }
+                ],
+                "icon_color": "#78B74F",
+                "text_color": "#FFFEF8",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 15
+                },
+                "space_between": {
+                  "unit": "px",
+                  "size": 12
+                },
+                "margin": {
+                  "unit": "px",
+                  "bottom": "35",
+                  "isLinked": false
+                }
+              }
+            },
+            {
+              "id": "dpbtnhero",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "CONSULTAR COMBOS POR WHATSAPP",
+                "link": {
+                  "url": "https://wa.me/5491135713432?text=Hola,%20vi%20la%20p%C3%A1gina%20de%20depilaci%C3%B3n%20definitiva%20de%20Inguz%20Box%20y%20quiero%20consultar%20por%20un%20turno%20y%20promociones",
+                  "is_external": true,
+                  "nofollow": false
+                },
+                "size": "lg",
+                "button_text_color": "#000000",
+                "background_color": "#78B74F",
+                "button_background_hover_color": "#8cd15e",
+                "button_text_color_hover": "#000000",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_weight": "800",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 16
+                },
+                "border_radius": {
+                  "unit": "px",
+                  "top": "8",
+                  "bottom": "8",
+                  "left": "8",
+                  "right": "8",
+                  "isLinked": true
+                },
+                "button_box_shadow_box_shadow_type": "yes",
+                "button_box_shadow_box_shadow": {
+                  "horizontal": 0,
+                  "vertical": 8,
+                  "blur": 20,
+                  "spread": 0,
+                  "color": "rgba(120, 183, 79, 0.4)"
+                }
+              }
+            },
+            {
+              "id": "dpherosubtext",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"color: #676767; font-size: 13px; margin-top: 12px;\">Respuesta rápida • Gabinete privado climatizado en Morón Centro</p>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "dpherocol2",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 40,
+            "align_items": "center"
+          },
+          "elements": [
+            {
+              "id": "dpcardtech",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "\n<div style=\"background: linear-gradient(145deg, #162018 0%, #1a1a1a 100%); border: 2px solid #78B74F; border-radius: 16px; padding: 25px; text-align: center; box-shadow: 0 20px 40px rgba(0,0,0,0.5);\">\n  <div style=\"display: inline-block; padding: 4px 14px; background: #78B74F; color: #000; font-weight: 800; font-size: 12px; border-radius: 20px; text-transform: uppercase; margin-bottom: 15px;\">Tecnología 2026</div>\n  <h3 style=\"color: #FFFEF8; font-size: 24px; margin-bottom: 5px; font-weight: 700;\">Láser Multilongitud de Onda</h3>\n  <p style=\"color: #78B74F; font-size: 14px; margin-bottom: 15px; font-weight: 600;\">Alexandrita 755nm • Diodo 808nm • 940nm • Nd:YAG 1064nm</p>\n  <p style=\"color: #abb8c3; font-size: 14px; line-height: 1.5; margin-bottom: 20px;\">Equipamiento de última generación que combina simultáneamente 4 longitudes de onda y cabezal ultra frío para una sesión rápida, cómoda y efectiva.</p>\n  <div style=\"background: rgba(0,0,0,0.4); padding: 12px; border-radius: 8px; border-left: 4px solid #78B74F; text-align: left;\">\n    <strong style=\"color: #FFFEF8; font-size: 13px; display: block;\">📍 Gabinete Presencial en Morón:</strong>\n    <span style=\"color: #A0A0A0; font-size: 13px;\">Gral. Machado 944, 1° Piso (Morón Centro)</span>\n  </div>\n</div>\n"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dptrathdr",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "layout": "boxed",
+        "content_width": {
+          "unit": "px",
+          "size": 1140
+        },
+        "background_background": "classic",
+        "background_color": "#FFFEF8",
+        "padding": {
+          "unit": "px",
+          "top": "70",
+          "bottom": "30",
+          "left": "20",
+          "right": "20",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "dptratcolhdr",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "dptrattitle",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Zonas & Combos de Depilación",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#000000",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 36
+                },
+                "typography_font_weight": "800"
+              }
+            },
+            {
+              "id": "dptratsub",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Combos exclusivos para mujeres y hombres sin dolor ni foliculitis. Consultanos por promociones activas.",
+                "header_size": "p",
+                "align": "center",
+                "title_color": "#58585A",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 17
+                },
+                "margin": {
+                  "unit": "px",
+                  "top": "10",
+                  "bottom": "20",
+                  "isLinked": false
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dphdr_hombres_hdr",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "layout": "boxed",
+        "content_width": {
+          "unit": "px",
+          "size": 1140
+        },
+        "background_background": "classic",
+        "background_color": "#FFFEF8",
+        "padding": {
+          "unit": "px",
+          "top": "30",
+          "bottom": "10",
+          "left": "20",
+          "right": "20",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "dphdr_hombres_col",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "dphdr_hombres_title",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "♂ Zonas & Combos Exclusivos Hombres",
+                "header_size": "h3",
+                "align": "left",
+                "title_color": "#264a13",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 22
+                },
+                "typography_font_weight": "800"
+              }
+            },
+            {
+              "id": "dphdr_hombres_sub",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Tratamientos con cabezal ultra frío diseñados para vello más grueso en torso, espalda y piernas",
+                "header_size": "p",
+                "align": "left",
+                "title_color": "#64748b",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 14
+                },
+                "margin": {
+                  "unit": "px",
+                  "top": "4",
+                  "bottom": "10",
+                  "isLinked": false
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dptrat_hombres_row",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "layout": "boxed",
+        "content_width": {
+          "unit": "px",
+          "size": 1140
+        },
+        "background_background": "classic",
+        "background_color": "#FFFEF8",
+        "padding": {
+          "unit": "px",
+          "top": "5",
+          "bottom": "25",
+          "left": "15",
+          "right": "15",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "dptrat_hombres_row_col1",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 33.33,
+            "padding": {
+              "unit": "px",
+              "top": "10",
+              "bottom": "15",
+              "left": "10",
+              "right": "10",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "dptrat_hombres_row_w1",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<div style=\"background: rgba(255, 255, 255, 0.94); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(226, 232, 240, 0.9); border-top: 5px solid #78B74F; border-radius: 12px; padding: 25px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); min-height: 260px; display: flex; flex-direction: column; justify-content: space-between;\">\n  <div>\n    <span style=\"display: inline-block; background: rgba(120, 183, 79, 0.15); color: #264a13; border: 1px solid #78B74F; font-size: 11px; font-weight: 800; padding: 4px 12px; border-radius: 20px; text-transform: uppercase; margin-bottom: 12px;\">♂ Solo Hombre</span>\n    <h4 style=\"color: #000000; font-size: 18px; font-weight: 800; margin-bottom: 10px; line-height: 1.3;\">Pecho + Abdomen + Espalda</h4>\n    <p style=\"color: #58585A; font-size: 14px; line-height: 1.5; margin-bottom: 16px;\">El combo masculino preferido para deportistas, gimnasio o comodidad personal en todo el torso.</p>\n  </div>\n  <div style=\"border-top: 1px dashed #e2e8f0; padding-top: 12px; margin-top: auto;\">\n    <a href=\"https://wa.me/5491135713432?text=Hola%2C%20quiero%20consultar%20por%20el%20combo%20masculino%3A%20Pecho%20%2B%20Abdomen%20%2B%20Espalda\" target=\"_blank\" style=\"color: #264a13; font-weight: 800; font-size: 13px; text-decoration: none;\">Consultar por WhatsApp &rarr;</a>\n  </div>\n</div>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "dptrat_hombres_row_col2",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 33.33,
+            "padding": {
+              "unit": "px",
+              "top": "10",
+              "bottom": "15",
+              "left": "10",
+              "right": "10",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "dptrat_hombres_row_w2",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<div style=\"background: rgba(255, 255, 255, 0.94); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(226, 232, 240, 0.9); border-top: 5px solid #78B74F; border-radius: 12px; padding: 25px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); min-height: 260px; display: flex; flex-direction: column; justify-content: space-between;\">\n  <div>\n    <span style=\"display: inline-block; background: rgba(120, 183, 79, 0.15); color: #264a13; border: 1px solid #78B74F; font-size: 11px; font-weight: 800; padding: 4px 12px; border-radius: 20px; text-transform: uppercase; margin-bottom: 12px;\">♂ Solo Hombre</span>\n    <h4 style=\"color: #000000; font-size: 18px; font-weight: 800; margin-bottom: 10px; line-height: 1.3;\">Hombros + Espalda Completa</h4>\n    <p style=\"color: #58585A; font-size: 14px; line-height: 1.5; margin-bottom: 16px;\">Eliminá el vello en zonas difíciles de alcanzar. Chau granitos, irritación por transpiración y roce de ropa.</p>\n  </div>\n  <div style=\"border-top: 1px dashed #e2e8f0; padding-top: 12px; margin-top: auto;\">\n    <a href=\"https://wa.me/5491135713432?text=Hola%2C%20quiero%20consultar%20por%20el%20combo%20masculino%3A%20Hombros%20%2B%20Espalda\" target=\"_blank\" style=\"color: #264a13; font-weight: 800; font-size: 13px; text-decoration: none;\">Consultar por WhatsApp &rarr;</a>\n  </div>\n</div>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "dptrat_hombres_row_col3",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 33.33,
+            "padding": {
+              "unit": "px",
+              "top": "10",
+              "bottom": "15",
+              "left": "10",
+              "right": "10",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "dptrat_hombres_row_w3",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<div style=\"background: rgba(255, 255, 255, 0.94); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(226, 232, 240, 0.9); border-top: 5px solid #78B74F; border-radius: 12px; padding: 25px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); min-height: 260px; display: flex; flex-direction: column; justify-content: space-between;\">\n  <div>\n    <span style=\"display: inline-block; background: rgba(120, 183, 79, 0.15); color: #264a13; border: 1px solid #78B74F; font-size: 11px; font-weight: 800; padding: 4px 12px; border-radius: 20px; text-transform: uppercase; margin-bottom: 12px;\">♂ Solo Hombre</span>\n    <h4 style=\"color: #000000; font-size: 18px; font-weight: 800; margin-bottom: 10px; line-height: 1.3;\">Pierna + Espalda + Pecho + Abdomen + Hombro</h4>\n    <p style=\"color: #58585A; font-size: 14px; line-height: 1.5; margin-bottom: 16px;\">Tratamiento total para atletas, nadadores, crossfitters y personas que buscan máximo rendimiento y confort.</p>\n  </div>\n  <div style=\"border-top: 1px dashed #e2e8f0; padding-top: 12px; margin-top: auto;\">\n    <a href=\"https://wa.me/5491135713432?text=Hola%2C%20quiero%20consultar%20por%20el%20combo%20masculino%3A%20Pierna%20%2B%20Espalda%20%2B%20Pecho%20%2B%20Abdomen%20%2B%20Hombro\" target=\"_blank\" style=\"color: #264a13; font-weight: 800; font-size: 13px; text-decoration: none;\">Consultar por WhatsApp &rarr;</a>\n  </div>\n</div>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dphdr_ambos_hdr",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "layout": "boxed",
+        "content_width": {
+          "unit": "px",
+          "size": 1140
+        },
+        "background_background": "classic",
+        "background_color": "#FFFEF8",
+        "padding": {
+          "unit": "px",
+          "top": "30",
+          "bottom": "10",
+          "left": "20",
+          "right": "20",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "dphdr_ambos_col",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "dphdr_ambos_title",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "♀ ♂ Packs a Elección (Hombre & Mujer)",
+                "header_size": "h3",
+                "align": "left",
+                "title_color": "#264a13",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 22
+                },
+                "typography_font_weight": "800"
+              }
+            },
+            {
+              "id": "dphdr_ambos_sub",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Tratamientos unisex sin rosa: armá tu propio paquete combinando libremente las zonas que elijas",
+                "header_size": "p",
+                "align": "left",
+                "title_color": "#64748b",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 14
+                },
+                "margin": {
+                  "unit": "px",
+                  "top": "4",
+                  "bottom": "10",
+                  "isLinked": false
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dptrat_ambos_row",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "layout": "boxed",
+        "content_width": {
+          "unit": "px",
+          "size": 1140
+        },
+        "background_background": "classic",
+        "background_color": "#FFFEF8",
+        "padding": {
+          "unit": "px",
+          "top": "5",
+          "bottom": "25",
+          "left": "15",
+          "right": "15",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "dptrat_ambos_row_col1",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 33.33,
+            "padding": {
+              "unit": "px",
+              "top": "10",
+              "bottom": "15",
+              "left": "10",
+              "right": "10",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "dptrat_ambos_row_w1",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<div style=\"background: rgba(255, 255, 255, 0.94); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(226, 232, 240, 0.9); border-top: 5px solid #78B74F; border-radius: 12px; padding: 25px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); min-height: 260px; display: flex; flex-direction: column; justify-content: space-between;\">\n  <div>\n    <span style=\"display: inline-block; background: rgba(120, 183, 79, 0.15); color: #264a13; border: 1px solid #78B74F; font-size: 11px; font-weight: 800; padding: 4px 12px; border-radius: 20px; text-transform: uppercase; margin-bottom: 12px;\">♀ ♂ Hombre & Mujer</span>\n    <h4 style=\"color: #000000; font-size: 18px; font-weight: 800; margin-bottom: 10px; line-height: 1.3;\">3 Zonas a Elección</h4>\n    <p style=\"color: #58585A; font-size: 14px; line-height: 1.5; margin-bottom: 16px;\">Armá tu propio paquete combinando libremente las 3 zonas del cuerpo que quieras tratar en tu sesión.</p>\n  </div>\n  <div style=\"border-top: 1px dashed #e2e8f0; padding-top: 12px; margin-top: auto;\">\n    <a href=\"https://wa.me/5491135713432?text=Hola%2C%20quiero%20consultar%20por%20el%20pack%20unisex%3A%203%20Zonas%20a%20Elecci%C3%B3n\" target=\"_blank\" style=\"color: #264a13; font-weight: 800; font-size: 13px; text-decoration: none;\">Consultar por WhatsApp &rarr;</a>\n  </div>\n</div>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "dptrat_ambos_row_col2",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 33.33,
+            "padding": {
+              "unit": "px",
+              "top": "10",
+              "bottom": "15",
+              "left": "10",
+              "right": "10",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "dptrat_ambos_row_w2",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<div style=\"background: rgba(255, 255, 255, 0.94); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(226, 232, 240, 0.9); border-top: 5px solid #78B74F; border-radius: 12px; padding: 25px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); min-height: 260px; display: flex; flex-direction: column; justify-content: space-between;\">\n  <div>\n    <span style=\"display: inline-block; background: rgba(120, 183, 79, 0.15); color: #264a13; border: 1px solid #78B74F; font-size: 11px; font-weight: 800; padding: 4px 12px; border-radius: 20px; text-transform: uppercase; margin-bottom: 12px;\">♀ ♂ Hombre & Mujer</span>\n    <h4 style=\"color: #000000; font-size: 18px; font-weight: 800; margin-bottom: 10px; line-height: 1.3;\">6 Zonas a Elección</h4>\n    <p style=\"color: #58585A; font-size: 14px; line-height: 1.5; margin-bottom: 16px;\">Combiná hasta 6 zonas corporales o faciales con tarifa promocional para un tratamiento mucho más amplio.</p>\n  </div>\n  <div style=\"border-top: 1px dashed #e2e8f0; padding-top: 12px; margin-top: auto;\">\n    <a href=\"https://wa.me/5491135713432?text=Hola%2C%20quiero%20consultar%20por%20el%20pack%20unisex%3A%206%20Zonas%20a%20Elecci%C3%B3n\" target=\"_blank\" style=\"color: #264a13; font-weight: 800; font-size: 13px; text-decoration: none;\">Consultar por WhatsApp &rarr;</a>\n  </div>\n</div>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "dptrat_ambos_row_col3",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 33.33,
+            "padding": {
+              "unit": "px",
+              "top": "10",
+              "bottom": "15",
+              "left": "10",
+              "right": "10",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "dptrat_ambos_row_w3",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<div style=\"background: rgba(255, 255, 255, 0.94); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(226, 232, 240, 0.9); border-top: 5px solid #78B74F; border-radius: 12px; padding: 25px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); min-height: 260px; display: flex; flex-direction: column; justify-content: space-between;\">\n  <div>\n    <span style=\"display: inline-block; background: rgba(120, 183, 79, 0.15); color: #264a13; border: 1px solid #78B74F; font-size: 11px; font-weight: 800; padding: 4px 12px; border-radius: 20px; text-transform: uppercase; margin-bottom: 12px;\">♀ ♂ Hombre & Mujer</span>\n    <h4 style=\"color: #000000; font-size: 18px; font-weight: 800; margin-bottom: 10px; line-height: 1.3;\">Cuerpo Entero</h4>\n    <p style=\"color: #58585A; font-size: 14px; line-height: 1.5; margin-bottom: 16px;\">Tratamiento integral de cuerpo completo para olvidarte del vello en todas las zonas deseadas.</p>\n  </div>\n  <div style=\"border-top: 1px dashed #e2e8f0; padding-top: 12px; margin-top: auto;\">\n    <a href=\"https://wa.me/5491135713432?text=Hola%2C%20quiero%20consultar%20por%20el%20pack%20unisex%3A%20Cuerpo%20Entero\" target=\"_blank\" style=\"color: #264a13; font-weight: 800; font-size: 13px; text-decoration: none;\">Consultar por WhatsApp &rarr;</a>\n  </div>\n</div>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dphdr_mujeres_hdr",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "layout": "boxed",
+        "content_width": {
+          "unit": "px",
+          "size": 1140
+        },
+        "background_background": "classic",
+        "background_color": "#FFFEF8",
+        "padding": {
+          "unit": "px",
+          "top": "30",
+          "bottom": "10",
+          "left": "20",
+          "right": "20",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "dphdr_mujeres_col",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "dphdr_mujeres_title",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "♀ Zonas & Combos Exclusivos Mujeres",
+                "header_size": "h3",
+                "align": "left",
+                "title_color": "#873d3a",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 22
+                },
+                "typography_font_weight": "800"
+              }
+            },
+            {
+              "id": "dphdr_mujeres_sub",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Los paquetes más solicitados para higiene íntima, piernas suaves y depilación facial",
+                "header_size": "p",
+                "align": "left",
+                "title_color": "#64748b",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 14
+                },
+                "margin": {
+                  "unit": "px",
+                  "top": "4",
+                  "bottom": "10",
+                  "isLinked": false
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dptrat_mujeres_r1",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "layout": "boxed",
+        "content_width": {
+          "unit": "px",
+          "size": 1140
+        },
+        "background_background": "classic",
+        "background_color": "#FFFEF8",
+        "padding": {
+          "unit": "px",
+          "top": "5",
+          "bottom": "25",
+          "left": "15",
+          "right": "15",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "dptrat_mujeres_r1_col1",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 33.33,
+            "padding": {
+              "unit": "px",
+              "top": "10",
+              "bottom": "15",
+              "left": "10",
+              "right": "10",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "dptrat_mujeres_r1_w1",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<div style=\"background: rgba(255, 255, 255, 0.94); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(226, 232, 240, 0.9); border-top: 5px solid #c07673; border-radius: 12px; padding: 25px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); min-height: 260px; display: flex; flex-direction: column; justify-content: space-between;\">\n  <div>\n    <span style=\"display: inline-block; background: rgba(192, 118, 115, 0.15); color: #873d3a; border: 1px solid #c07673; font-size: 11px; font-weight: 800; padding: 4px 12px; border-radius: 20px; text-transform: uppercase; margin-bottom: 12px;\">♀ Solo Mujer</span>\n    <h4 style=\"color: #000000; font-size: 18px; font-weight: 800; margin-bottom: 10px; line-height: 1.3;\">Cavado Completo + Axilas</h4>\n    <p style=\"color: #58585A; font-size: 14px; line-height: 1.5; margin-bottom: 16px;\">El combo más elegido para olvidarte del rasurado continuo y la irritación en zonas sensibles.</p>\n  </div>\n  <div style=\"border-top: 1px dashed #e2e8f0; padding-top: 12px; margin-top: auto;\">\n    <a href=\"https://wa.me/5491135713432?text=Hola%2C%20quiero%20consultar%20por%20el%20combo%20femenino%3A%20Cavado%20Completo%20%2B%20Axilas\" target=\"_blank\" style=\"color: #873d3a; font-weight: 800; font-size: 13px; text-decoration: none;\">Consultar por WhatsApp &rarr;</a>\n  </div>\n</div>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "dptrat_mujeres_r1_col2",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 33.33,
+            "padding": {
+              "unit": "px",
+              "top": "10",
+              "bottom": "15",
+              "left": "10",
+              "right": "10",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "dptrat_mujeres_r1_w2",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<div style=\"background: rgba(255, 255, 255, 0.94); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(226, 232, 240, 0.9); border-top: 5px solid #c07673; border-radius: 12px; padding: 25px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); min-height: 260px; display: flex; flex-direction: column; justify-content: space-between;\">\n  <div>\n    <span style=\"display: inline-block; background: rgba(192, 118, 115, 0.15); color: #873d3a; border: 1px solid #c07673; font-size: 11px; font-weight: 800; padding: 4px 12px; border-radius: 20px; text-transform: uppercase; margin-bottom: 12px;\">♀ Solo Mujer</span>\n    <h4 style=\"color: #000000; font-size: 18px; font-weight: 800; margin-bottom: 10px; line-height: 1.3;\">Cavado Completo + Tira de Cola</h4>\n    <p style=\"color: #58585A; font-size: 14px; line-height: 1.5; margin-bottom: 16px;\">Comodidad absoluta y piel sedosa para sentirte segura con cualquier tipo de prenda.</p>\n  </div>\n  <div style=\"border-top: 1px dashed #e2e8f0; padding-top: 12px; margin-top: auto;\">\n    <a href=\"https://wa.me/5491135713432?text=Hola%2C%20quiero%20consultar%20por%20el%20combo%20femenino%3A%20Cavado%20Completo%20%2B%20Tira%20de%20Cola\" target=\"_blank\" style=\"color: #873d3a; font-weight: 800; font-size: 13px; text-decoration: none;\">Consultar por WhatsApp &rarr;</a>\n  </div>\n</div>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "dptrat_mujeres_r1_col3",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 33.33,
+            "padding": {
+              "unit": "px",
+              "top": "10",
+              "bottom": "15",
+              "left": "10",
+              "right": "10",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "dptrat_mujeres_r1_w3",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<div style=\"background: rgba(255, 255, 255, 0.94); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(226, 232, 240, 0.9); border-top: 5px solid #c07673; border-radius: 12px; padding: 25px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); min-height: 260px; display: flex; flex-direction: column; justify-content: space-between;\">\n  <div>\n    <span style=\"display: inline-block; background: rgba(192, 118, 115, 0.15); color: #873d3a; border: 1px solid #c07673; font-size: 11px; font-weight: 800; padding: 4px 12px; border-radius: 20px; text-transform: uppercase; margin-bottom: 12px;\">♀ Solo Mujer</span>\n    <h4 style=\"color: #000000; font-size: 18px; font-weight: 800; margin-bottom: 10px; line-height: 1.3;\">Cavado Completo + Tira de Cola + Axilas</h4>\n    <p style=\"color: #58585A; font-size: 14px; line-height: 1.5; margin-bottom: 16px;\">Tratamiento integral de higiene íntima y axilas en una única sesión rápida y confortable.</p>\n  </div>\n  <div style=\"border-top: 1px dashed #e2e8f0; padding-top: 12px; margin-top: auto;\">\n    <a href=\"https://wa.me/5491135713432?text=Hola%2C%20quiero%20consultar%20por%20el%20combo%20femenino%3A%20Cavado%20Completo%20%2B%20Tira%20de%20Cola%20%2B%20Axilas\" target=\"_blank\" style=\"color: #873d3a; font-weight: 800; font-size: 13px; text-decoration: none;\">Consultar por WhatsApp &rarr;</a>\n  </div>\n</div>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dptrat_mujeres_r2",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "layout": "boxed",
+        "content_width": {
+          "unit": "px",
+          "size": 1140
+        },
+        "background_background": "classic",
+        "background_color": "#FFFEF8",
+        "padding": {
+          "unit": "px",
+          "top": "5",
+          "bottom": "25",
+          "left": "15",
+          "right": "15",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "dptrat_mujeres_r2_col1",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 33.33,
+            "padding": {
+              "unit": "px",
+              "top": "10",
+              "bottom": "15",
+              "left": "10",
+              "right": "10",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "dptrat_mujeres_r2_w1",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<div style=\"background: rgba(255, 255, 255, 0.94); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(226, 232, 240, 0.9); border-top: 5px solid #c07673; border-radius: 12px; padding: 25px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); min-height: 260px; display: flex; flex-direction: column; justify-content: space-between;\">\n  <div>\n    <span style=\"display: inline-block; background: rgba(192, 118, 115, 0.15); color: #873d3a; border: 1px solid #c07673; font-size: 11px; font-weight: 800; padding: 4px 12px; border-radius: 20px; text-transform: uppercase; margin-bottom: 12px;\">♀ Solo Mujer</span>\n    <h4 style=\"color: #000000; font-size: 18px; font-weight: 800; margin-bottom: 10px; line-height: 1.3;\">Pierna + Cavado Completo + Axilas</h4>\n    <p style=\"color: #58585A; font-size: 14px; line-height: 1.5; margin-bottom: 16px;\">Disfrutá piernas suaves todo el año sin preocuparte por la cera o las irritaciones previas al verano.</p>\n  </div>\n  <div style=\"border-top: 1px dashed #e2e8f0; padding-top: 12px; margin-top: auto;\">\n    <a href=\"https://wa.me/5491135713432?text=Hola%2C%20quiero%20consultar%20por%20el%20combo%20femenino%3A%20Pierna%20%2B%20Cavado%20Completo%20%2B%20Axilas\" target=\"_blank\" style=\"color: #873d3a; font-weight: 800; font-size: 13px; text-decoration: none;\">Consultar por WhatsApp &rarr;</a>\n  </div>\n</div>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "dptrat_mujeres_r2_col2",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 33.33,
+            "padding": {
+              "unit": "px",
+              "top": "10",
+              "bottom": "15",
+              "left": "10",
+              "right": "10",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "dptrat_mujeres_r2_w2",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<div style=\"background: rgba(255, 255, 255, 0.94); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(226, 232, 240, 0.9); border-top: 5px solid #c07673; border-radius: 12px; padding: 25px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); min-height: 260px; display: flex; flex-direction: column; justify-content: space-between;\">\n  <div>\n    <span style=\"display: inline-block; background: rgba(192, 118, 115, 0.15); color: #873d3a; border: 1px solid #c07673; font-size: 11px; font-weight: 800; padding: 4px 12px; border-radius: 20px; text-transform: uppercase; margin-bottom: 12px;\">♀ Solo Mujer</span>\n    <h4 style=\"color: #000000; font-size: 18px; font-weight: 800; margin-bottom: 10px; line-height: 1.3;\">Rostro + Axila</h4>\n    <p style=\"color: #58585A; font-size: 14px; line-height: 1.5; margin-bottom: 16px;\">Tratamiento delicado para eliminar el vello facial no deseado cuidando la textura suave de tu piel.</p>\n  </div>\n  <div style=\"border-top: 1px dashed #e2e8f0; padding-top: 12px; margin-top: auto;\">\n    <a href=\"https://wa.me/5491135713432?text=Hola%2C%20quiero%20consultar%20por%20el%20combo%20femenino%3A%20Rostro%20%2B%20Axila\" target=\"_blank\" style=\"color: #873d3a; font-weight: 800; font-size: 13px; text-decoration: none;\">Consultar por WhatsApp &rarr;</a>\n  </div>\n</div>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "dptrat_mujeres_r2_col3",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 33.33,
+            "padding": {
+              "unit": "px",
+              "top": "10",
+              "bottom": "15",
+              "left": "10",
+              "right": "10",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "dptrat_mujeres_r2_w3",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<div style=\"background: rgba(255, 255, 255, 0.94); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(226, 232, 240, 0.9); border-top: 5px solid #c07673; border-radius: 12px; padding: 25px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); min-height: 260px; display: flex; flex-direction: column; justify-content: space-between;\">\n  <div>\n    <span style=\"display: inline-block; background: rgba(192, 118, 115, 0.15); color: #873d3a; border: 1px solid #c07673; font-size: 11px; font-weight: 800; padding: 4px 12px; border-radius: 20px; text-transform: uppercase; margin-bottom: 12px;\">♀ Solo Mujer</span>\n    <h4 style=\"color: #000000; font-size: 18px; font-weight: 800; margin-bottom: 10px; line-height: 1.3;\">Bozo + Mentón</h4>\n    <p style=\"color: #58585A; font-size: 14px; line-height: 1.5; margin-bottom: 16px;\">Depilación precisa y rápida en áreas faciales puntuales, sin manchas ni efectos secundarios.</p>\n  </div>\n  <div style=\"border-top: 1px dashed #e2e8f0; padding-top: 12px; margin-top: auto;\">\n    <a href=\"https://wa.me/5491135713432?text=Hola%2C%20quiero%20consultar%20por%20el%20combo%20femenino%3A%20Bozo%20%2B%20Ment%C3%B3n\" target=\"_blank\" style=\"color: #873d3a; font-weight: 800; font-size: 13px; text-decoration: none;\">Consultar por WhatsApp &rarr;</a>\n  </div>\n</div>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dptrat_mujeres_r3",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "layout": "boxed",
+        "content_width": {
+          "unit": "px",
+          "size": 1140
+        },
+        "background_background": "classic",
+        "background_color": "#FFFEF8",
+        "padding": {
+          "unit": "px",
+          "top": "5",
+          "bottom": "25",
+          "left": "15",
+          "right": "15",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "dptrat_mujeres_r3_col1",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 50.0,
+            "padding": {
+              "unit": "px",
+              "top": "10",
+              "bottom": "15",
+              "left": "10",
+              "right": "10",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "dptrat_mujeres_r3_w1",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<div style=\"background: rgba(255, 255, 255, 0.94); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(226, 232, 240, 0.9); border-top: 5px solid #c07673; border-radius: 12px; padding: 25px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); min-height: 260px; display: flex; flex-direction: column; justify-content: space-between;\">\n  <div>\n    <span style=\"display: inline-block; background: rgba(192, 118, 115, 0.15); color: #873d3a; border: 1px solid #c07673; font-size: 11px; font-weight: 800; padding: 4px 12px; border-radius: 20px; text-transform: uppercase; margin-bottom: 12px;\">♀ Solo Mujer</span>\n    <h4 style=\"color: #000000; font-size: 18px; font-weight: 800; margin-bottom: 10px; line-height: 1.3;\">Pierna + Cavado + Tira + Axila</h4>\n    <p style=\"color: #58585A; font-size: 14px; line-height: 1.5; margin-bottom: 16px;\">Las cuatro zonas de mayor demanda combinadas en una sesión ágil para optimizar tus tiempos.</p>\n  </div>\n  <div style=\"border-top: 1px dashed #e2e8f0; padding-top: 12px; margin-top: auto;\">\n    <a href=\"https://wa.me/5491135713432?text=Hola%2C%20quiero%20consultar%20por%20el%20combo%20femenino%3A%20Pierna%20%2B%20Cavado%20%2B%20Tira%20%2B%20Axila\" target=\"_blank\" style=\"color: #873d3a; font-weight: 800; font-size: 13px; text-decoration: none;\">Consultar por WhatsApp &rarr;</a>\n  </div>\n</div>"
+              }
+            }
+          ]
+        },
+        {
+          "id": "dptrat_mujeres_r3_col2",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 50.0,
+            "padding": {
+              "unit": "px",
+              "top": "10",
+              "bottom": "15",
+              "left": "10",
+              "right": "10",
+              "isLinked": false
+            }
+          },
+          "elements": [
+            {
+              "id": "dptrat_mujeres_r3_w2",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<div style=\"background: rgba(255, 255, 255, 0.94); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(226, 232, 240, 0.9); border-top: 5px solid #c07673; border-radius: 12px; padding: 25px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); min-height: 260px; display: flex; flex-direction: column; justify-content: space-between;\">\n  <div>\n    <span style=\"display: inline-block; background: rgba(192, 118, 115, 0.15); color: #873d3a; border: 1px solid #c07673; font-size: 11px; font-weight: 800; padding: 4px 12px; border-radius: 20px; text-transform: uppercase; margin-bottom: 12px;\">♀ Solo Mujer</span>\n    <h4 style=\"color: #000000; font-size: 18px; font-weight: 800; margin-bottom: 10px; line-height: 1.3;\">Pierna + Cavado + Tira + Axila + Glúteos</h4>\n    <p style=\"color: #58585A; font-size: 14px; line-height: 1.5; margin-bottom: 16px;\">Cobertura amplia para una suavidad total en todo el tren inferior y torso superior.</p>\n  </div>\n  <div style=\"border-top: 1px dashed #e2e8f0; padding-top: 12px; margin-top: auto;\">\n    <a href=\"https://wa.me/5491135713432?text=Hola%2C%20quiero%20consultar%20por%20el%20combo%20femenino%3A%20Pierna%20%2B%20Cavado%20%2B%20Tira%20%2B%20Axila%20%2B%20Gl%C3%BAteos\" target=\"_blank\" style=\"color: #873d3a; font-weight: 800; font-size: 13px; text-decoration: none;\">Consultar por WhatsApp &rarr;</a>\n  </div>\n</div>"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dpmetsec",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "layout": "boxed",
+        "content_width": {
+          "unit": "px",
+          "size": 1140
+        },
+        "background_background": "classic",
+        "background_color": "#111412",
+        "padding": {
+          "unit": "px",
+          "top": "70",
+          "bottom": "70",
+          "left": "20",
+          "right": "20",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "dpmetcolhdr",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "dpmeth2",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "El Método de Atención en 3 Pasos",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#78B74F",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 36
+                },
+                "typography_font_weight": "800"
+              }
+            },
+            {
+              "id": "dpmetsub",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Protocolo riguroso, higiénico e indoloro para resultados definitivos",
+                "header_size": "p",
+                "align": "center",
+                "title_color": "#A0A0A0",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 16
+                },
+                "margin": {
+                  "unit": "px",
+                  "top": "10",
+                  "bottom": "40",
+                  "isLinked": false
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dpstepgrid",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "layout": "boxed",
+        "content_width": {
+          "unit": "px",
+          "size": 1140
+        },
+        "background_background": "classic",
+        "background_color": "#111412",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "bottom": "70",
+          "left": "20",
+          "right": "20",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "dpstep1",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 33.33
+          },
+          "elements": [
+            {
+              "id": "dpstepw1",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "\n<div style=\"background: rgba(255,255,255,0.03); border: 1px solid rgba(120, 183, 79, 0.3); border-radius: 12px; padding: 30px; text-align: center;\">\n  <span style=\"display: inline-block; width: 44px; height: 44px; line-height: 44px; border-radius: 50%; background: #78B74F; color: #000; font-weight: 800; font-size: 20px; margin-bottom: 15px;\">1</span>\n  <h4 style=\"color: #FFFEF8; font-size: 20px; font-weight: 700; margin-bottom: 10px;\">Evaluación & Preparación</h4>\n  <p style=\"color: #A0A0A0; font-size: 14px; line-height: 1.6;\">Analizamos tu fototipo de piel y grosor del vello. Te brindamos las pautas previas sencillas (rasurado 24h antes).</p>\n</div>\n"
+              }
+            }
+          ]
+        },
+        {
+          "id": "dpstep2",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 33.33
+          },
+          "elements": [
+            {
+              "id": "dpstepw2",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "\n<div style=\"background: rgba(255,255,255,0.03); border: 1px solid rgba(120, 183, 79, 0.3); border-radius: 12px; padding: 30px; text-align: center;\">\n  <span style=\"display: inline-block; width: 44px; height: 44px; line-height: 44px; border-radius: 50%; background: #78B74F; color: #000; font-weight: 800; font-size: 20px; margin-bottom: 15px;\">2</span>\n  <h4 style=\"color: #FFFEF8; font-size: 20px; font-weight: 700; margin-bottom: 10px;\">Sesión Indolora</h4>\n  <p style=\"color: #A0A0A0; font-size: 14px; line-height: 1.6;\">Aplicamos gel neutro y cabezal frío (-5°C) que anestesia térmicamente la piel mientras destruye el folículo de raíz.</p>\n</div>\n"
+              }
+            }
+          ]
+        },
+        {
+          "id": "dpstep3",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 33.33
+          },
+          "elements": [
+            {
+              "id": "dpstepw3",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "\n<div style=\"background: rgba(255,255,255,0.03); border: 1px solid rgba(120, 183, 79, 0.3); border-radius: 12px; padding: 30px; text-align: center;\">\n  <span style=\"display: inline-block; width: 44px; height: 44px; line-height: 44px; border-radius: 50%; background: #78B74F; color: #000; font-weight: 800; font-size: 20px; margin-bottom: 15px;\">3</span>\n  <h4 style=\"color: #FFFEF8; font-size: 20px; font-weight: 700; margin-bottom: 10px;\">Resultados & Seguimiento</h4>\n  <p style=\"color: #A0A0A0; font-size: 14px; line-height: 1.6;\">El vello se cae en los días posteriores. Coordinamos tus sesiones cada 30 a 45 días para un resultado duradero.</p>\n</div>\n"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dpfaqsec",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "layout": "boxed",
+        "content_width": {
+          "unit": "px",
+          "size": 900
+        },
+        "background_background": "classic",
+        "background_color": "#FFFEF8",
+        "padding": {
+          "unit": "px",
+          "top": "70",
+          "bottom": "70",
+          "left": "20",
+          "right": "20",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "dpfaqcol",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "dpfaqtitle",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Preguntas Frecuentes",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#000000",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 34
+                },
+                "typography_font_weight": "800",
+                "margin": {
+                  "unit": "px",
+                  "bottom": "35",
+                  "isLinked": false
+                }
+              }
+            },
+            {
+              "id": "dpfaqacc",
+              "elType": "widget",
+              "widgetType": "accordion",
+              "settings": {
+                "tabs": [
+                  {
+                    "tab_title": "¿Duele la depilación definitiva con este equipo?",
+                    "tab_content": "No. El equipo cuenta con cabezal ultra-refrigerado dinámico que enfría la superficie de la piel a temperatura bajo cero durante toda la sesión, haciendo que sea prácticamente indolora y muy confortable."
+                  },
+                  {
+                    "tab_title": "¿En cuántas sesiones se notan los resultados?",
+                    "tab_content": "Notarás una reducción visible en la cantidad y grosor del vello desde la primera o segunda sesión. Para un resultado completo y definitivo, se suele requerir un protocolo de entre 6 y 8 sesiones según la zona."
+                  },
+                  {
+                    "tab_title": "¿Se puede realizar en verano o con piel bronceada?",
+                    "tab_content": "Sí, gracias a la tecnología multilongitud de onda (Alexandrita, Diodo y Nd:YAG) podemos tratar distintos fototipos durante todo el año de forma segura, respetando 48-72h previas y posteriores de exposición solar directa."
+                  },
+                  {
+                    "tab_title": "¿Cómo debo prepararme antes de asistir al turno?",
+                    "tab_content": "Rasurar la zona 24 horas antes con maquinita para que el vello esté al ras. Es importante no arrancar de raíz con cera ni pinza en las semanas previas, y asistir con la piel limpia sin cremas ni desodorante."
+                  },
+                  {
+                    "tab_title": "¿Atienden a mujeres y a hombres?",
+                    "tab_content": "Sí, contamos con protocolos y packs específicos adaptados para mujeres y para hombres en todas las zonas corporales y faciales."
+                  },
+                  {
+                    "tab_title": "¿Cómo consulto precios y promociones vigentes?",
+                    "tab_content": "Escribinos directamente al WhatsApp oficial al +54 11 3571-3432 y te pasamos la lista de promociones del mes y coordinamos tu horario."
+                  }
+                ],
+                "border_color": "#e2e8f0",
+                "title_color": "#000000",
+                "tab_active_color": "#78B74F",
+                "title_background": "#ffffff",
+                "content_background": "#f8fafc",
+                "content_color": "#58585A"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dpfinsec",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "layout": "boxed",
+        "content_width": {
+          "unit": "px",
+          "size": 1000
+        },
+        "background_background": "classic",
+        "background_color": "#070A08",
+        "border_border": "solid",
+        "border_width": {
+          "unit": "px",
+          "top": 2,
+          "bottom": 2,
+          "left": 2,
+          "right": 2,
+          "isLinked": true
+        },
+        "border_color": "#78B74F",
+        "border_radius": {
+          "unit": "px",
+          "top": 16,
+          "bottom": 16,
+          "left": 16,
+          "right": 16,
+          "isLinked": true
+        },
+        "padding": {
+          "unit": "px",
+          "top": "60",
+          "bottom": "60",
+          "left": "30",
+          "right": "30",
+          "isLinked": false
+        },
+        "margin": {
+          "unit": "px",
+          "top": "20",
+          "bottom": "60",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "dpfincol",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 100
+          },
+          "elements": [
+            {
+              "id": "dpfintitle",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Decile adiós al vello y a la cera para siempre",
+                "header_size": "h2",
+                "align": "center",
+                "title_color": "#FFFEF8",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 36
+                },
+                "typography_font_weight": "800"
+              }
+            },
+            {
+              "id": "dpfinsub",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "Escribinos directamente al WhatsApp y coordinamos tu turno en Morón Centro.",
+                "header_size": "p",
+                "align": "center",
+                "title_color": "#A0A0A0",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 17
+                },
+                "margin": {
+                  "unit": "px",
+                  "top": "10",
+                  "bottom": "35",
+                  "isLinked": false
+                }
+              }
+            },
+            {
+              "id": "dpfinbtn",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "SOLICITAR INFORMACIÓN POR WHATSAPP",
+                "link": {
+                  "url": "https://wa.me/5491135713432?text=Hola,%20vi%20la%20p%C3%A1gina%20de%20depilaci%C3%B3n%20definitiva%20de%20Inguz%20Box%20y%20quiero%20consultar%20por%20un%20turno%20y%20promociones",
+                  "is_external": true,
+                  "nofollow": false
+                },
+                "size": "xl",
+                "align": "center",
+                "button_text_color": "#000000",
+                "background_color": "#78B74F",
+                "button_background_hover_color": "#8cd15e",
+                "button_text_color_hover": "#000000",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_weight": "800",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "10",
+                  "bottom": "10",
+                  "left": "10",
+                  "right": "10",
+                  "isLinked": true
+                }
+              }
+            },
+            {
+              "id": "dpfinfoot",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style=\"text-align: center; color: #676767; font-size: 13px; margin-top: 15px;\">Gabinete Privado Inguz Box • Gral. Machado 944, Morón • WhatsApp: +54 11 3571-3432</p>"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

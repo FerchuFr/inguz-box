@@ -69,7 +69,7 @@ Para cada vertical (Nutrición, Masajes, Depilación, etc.) se generan **dos for
 |---|---|---|---|
 | **Nutrición** | `https://nutricion.inguzbox.com` | `public_html/nutricion/` | **En Producción** |
 | **Masajes** | `https://masajes.inguzbox.com` | `public_html/masajes/` | **En Producción** |
-| **Depilación** | `https://depilacion.inguzbox.com` | `public_html/depilacion/` | **Pendiente de material** |
+| **Depilación** | `https://depilacion.inguzbox.com` | `public_html/depilacion/` | **En Producción** |
 
 ### Reglas Críticas de Despliegue
 * En cada carpeta de servicio en el servidor, subir el HTML copiado como `index.html`.
