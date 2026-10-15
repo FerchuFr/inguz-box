@@ -1,0 +1,187 @@
+{
+  "version": "0.4",
+  "title": "Home Principal - Inguz Box Training",
+  "type": "page",
+  "content": [
+    {
+      "id": "ingtop01",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "layout": "boxed",
+        "background_background": "classic",
+        "background_color": "#000000",
+        "padding": {
+          "unit": "px",
+          "top": "12",
+          "bottom": "12",
+          "left": "20",
+          "right": "20",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "ingtopcol1",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 60
+          },
+          "elements": [
+            {
+              "id": "tophead01",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "INGUZ BOX TRAINING | Gral. Machado 944, Morón Centro (a 2 cuadras de la estación)",
+                "header_size": "span",
+                "align": "left",
+                "title_color": "#78B74F",
+                "typography_typography": "custom",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 13
+                },
+                "typography_font_weight": "700"
+              }
+            }
+          ]
+        },
+        {
+          "id": "ingtopcol2",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 40
+          },
+          "elements": [
+            {
+              "id": "topbtn01",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "WhatsApp Gym: 11 5615-7093",
+                "link": {
+                  "url": "https://wa.me/5491156157093",
+                  "is_external": true
+                },
+                "align": "right",
+                "size": "xs",
+                "button_text_color": "#ffffff",
+                "background_color": "transparent"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "inghero01",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "layout": "boxed",
+        "background_background": "classic",
+        "background_color": "#0a0d0b",
+        "padding": {
+          "unit": "px",
+          "top": "90",
+          "bottom": "90",
+          "left": "20",
+          "right": "20",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "ingherocol1",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 60
+          },
+          "elements": [
+            {
+              "id": "heropill01",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "📍 Morón Centro • Espacio Integral de Entrenamiento",
+                "header_size": "span",
+                "title_color": "#78B74F",
+                "typography_font_weight": "700"
+              }
+            },
+            {
+              "id": "herotitle01",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "ENTRENÁ DISTINTO. SENTITE PARTE.",
+                "header_size": "h1",
+                "title_color": "#ffffff",
+                "typography_font_family": "Inter",
+                "typography_font_size": {
+                  "unit": "px",
+                  "size": 48
+                },
+                "typography_font_weight": "900"
+              }
+            },
+            {
+              "id": "herosub01",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p style='color:#abb8c3; font-size:16px;'>Musculación con profes presentes en sala, más de 8 disciplinas grupales dinámicas, comunidad activa y planes a tu medida.</p>"
+              }
+            },
+            {
+              "id": "herobtn01",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "text": "Reservar Clase Gratis",
+                "link": {
+                  "url": "https://forms.kommo.com/rcdcdld",
+                  "is_external": true
+                },
+                "button_text_color": "#000000",
+                "background_color": "#78B74F",
+                "border_radius": {
+                  "unit": "px",
+                  "top": "30",
+                  "bottom": "30",
+                  "left": "30",
+                  "right": "30"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": "ingherocol2",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 40
+          },
+          "elements": [
+            {
+              "id": "heroimg01",
+              "elType": "widget",
+              "widgetType": "image",
+              "settings": {
+                "image": {
+                  "url": "https://inguzbox.com/wp-content/uploads/elementor/thumbs/DSC03532-scaled-rmibzwh0hzpn1b3s9cxx85g917x6795qv8ppkui4hs.jpg"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

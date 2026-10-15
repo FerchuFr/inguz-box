@@ -15,3 +15,9 @@ credentials.json
 .DS_Store
 Thumbs.db
 node_modules/
+
+# Archivos multimedia pesados (superan límite de GitHub)
+*.MOV
+*.mov
+*.mp4
+
