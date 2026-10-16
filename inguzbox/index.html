@@ -666,13 +666,16 @@
       overflow: hidden;
       position: relative;
     }
-    .special-img-wrapper img {
+    .special-img-wrapper img,
+    .special-img-wrapper video {
       width: 100%;
       height: 100%;
       object-fit: cover;
       transition: transform 0.5s ease;
+      display: block;
     }
-    .special-card:hover .special-img-wrapper img {
+    .special-card:hover .special-img-wrapper img,
+    .special-card:hover .special-img-wrapper video {
       transform: scale(1.05);
     }
     .special-badge-float {
@@ -782,7 +785,7 @@
       background: #ffffff;
       border: 1px solid #e5e7eb;
       border-radius: var(--radius-md);
-      padding: 20px;
+      padding: 18px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -795,22 +798,41 @@
       box-shadow: 0 10px 20px rgba(0,0,0,0.08);
     }
     .benefit-cat-pill {
-      font-size: 10px;
+      font-size: 10.5px;
       font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: 0.5px;
-      color: #3b6b1f;
+      letter-spacing: 0.3px;
+      color: #2b5615;
       background: rgba(120, 183, 79, 0.15);
-      padding: 3px 8px;
+      padding: 4px 9px;
       border-radius: var(--radius-pill);
       align-self: flex-start;
       margin-bottom: 10px;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .benefit-logo-box {
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #fcfcfc;
+      border: 1px solid #ecece7;
+      border-radius: var(--radius-sm);
+      padding: 6px 10px;
+      margin-bottom: 12px;
+    }
+    .benefit-logo-box img {
+      max-height: 100%;
+      max-width: 100%;
+      object-fit: contain;
     }
     .benefit-item-card h4 {
-      font-size: 18px;
+      font-size: 17px;
       font-weight: 800;
       color: var(--text-dark);
-      margin-bottom: 4px;
+      margin-bottom: 3px;
     }
     .benefit-loc {
       font-size: 12px;
@@ -821,12 +843,12 @@
       background: #f7faf5;
       border: 1px dashed var(--primary);
       border-radius: var(--radius-sm);
-      padding: 10px;
+      padding: 9px;
       text-align: center;
     }
     .benefit-discount-val {
       font-family: 'Oswald', sans-serif;
-      font-size: 22px;
+      font-size: 20px;
       font-weight: 700;
       color: #2b5615;
       line-height: 1.1;
@@ -854,32 +876,78 @@
       border-radius: var(--radius-md);
       overflow: hidden;
       position: relative;
-      background: var(--bg-card);
+      background: #000000;
       border: 1px solid rgba(255, 255, 255, 0.08);
       aspect-ratio: 4/3;
+      display: block;
+      cursor: pointer;
+      text-decoration: none;
     }
     .showcase-card img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      transition: transform 0.5s ease;
+      transition: transform 0.4s ease, opacity 0.4s ease, filter 0.4s ease;
+      display: block;
     }
     .showcase-card:hover img {
-      transform: scale(1.06);
+      transform: scale(1.05);
+      opacity: 0.65;
+      filter: brightness(0.85);
     }
-    .showcase-overlay {
+    .showcase-ig-overlay {
       position: absolute;
       inset: 0;
-      background: linear-gradient(180deg, rgba(0,0,0,0) 40%, rgba(0,0,0,0.85) 100%);
       display: flex;
-      align-items: flex-end;
-      padding: 18px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      background: rgba(0, 0, 0, 0.4);
+      opacity: 0;
+      transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      pointer-events: none;
     }
-    .showcase-overlay span {
-      font-size: 14px;
-      font-weight: 700;
+    .showcase-card:hover .showcase-ig-overlay {
+      opacity: 1;
+    }
+    .showcase-ig-icon {
+      width: 38px;
+      height: 38px;
+      fill: #ffffff;
+      transform: scale(0.85);
+      transition: transform 0.3s ease;
+      filter: drop-shadow(0 2px 10px rgba(0,0,0,0.7));
+    }
+    .showcase-card:hover .showcase-ig-icon {
+      transform: scale(1);
+    }
+    .showcase-stats-row {
+      display: flex;
+      align-items: center;
+      gap: 20px;
       color: #ffffff;
-      letter-spacing: 0.3px;
+      font-weight: 700;
+      font-size: 15px;
+      transform: translateY(6px);
+      transition: transform 0.3s ease;
+    }
+    .showcase-card:hover .showcase-stats-row {
+      transform: translateY(0);
+    }
+    .showcase-stat-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      filter: drop-shadow(0 2px 6px rgba(0,0,0,0.8));
+    }
+    .showcase-stat-item svg {
+      width: 20px;
+      height: 20px;
+      fill: currentColor;
+    }
+    .showcase-stat-item.likes svg {
+      fill: #ff385c;
     }
 
     /* MEMBERSHIPS / PLANS (DARK) */
@@ -1101,6 +1169,92 @@
       flex-wrap: wrap;
     }
 
+    /* SUBSCRIPTION SECTION (PRE-FOOTER) */
+    .subscription-section {
+      background: var(--bg-dark);
+      padding: 70px 20px 80px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      position: relative;
+    }
+    .subscription-container {
+      max-width: 820px;
+      margin: 0 auto;
+    }
+    .subscription-card {
+      background: var(--bg-card);
+      border: 2px solid var(--primary);
+      border-radius: var(--radius-lg);
+      padding: 46px 38px;
+      box-shadow: 0 15px 45px rgba(0, 0, 0, 0.7), 0 0 35px rgba(120, 183, 79, 0.2);
+      text-align: center;
+    }
+    .subscription-header h2 {
+      font-size: 32px;
+      font-weight: 900;
+      color: #ffffff;
+      margin-bottom: 10px;
+      line-height: 1.2;
+    }
+    .subscription-header p {
+      font-size: 15px;
+      color: var(--text-muted);
+      max-width: 600px;
+      margin: 0 auto 30px;
+      line-height: 1.5;
+    }
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      text-align: left;
+      margin-bottom: 24px;
+    }
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .form-group label {
+      font-size: 12px;
+      font-weight: 700;
+      color: #eaeaea;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .form-control {
+      background: #0a0d0b;
+      border: 1px solid rgba(120, 183, 79, 0.35);
+      border-radius: var(--radius-sm);
+      padding: 13px 15px;
+      color: #ffffff;
+      font-family: inherit;
+      font-size: 14px;
+      transition: var(--transition);
+      outline: none;
+    }
+    .form-control:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 15px var(--primary-glow);
+      background: #101411;
+    }
+    .form-control::placeholder {
+      color: #58585a;
+    }
+    .form-submit-row {
+      display: flex;
+      justify-content: center;
+    }
+    .btn-submit {
+      min-width: 240px;
+      box-shadow: 0 6px 25px var(--primary-glow);
+      cursor: pointer;
+    }
+    .form-note {
+      font-size: 12px;
+      color: #71717a;
+      margin-top: 14px;
+    }
+
     /* FOOTER */
     .footer {
       background: #000000;
@@ -1285,6 +1439,15 @@
       .final-cta-card h2 {
         font-size: 30px;
       }
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+      .subscription-card {
+        padding: 30px 20px;
+      }
+      .btn-submit {
+        width: 100%;
+      }
     }
   </style>
 </head>
@@ -1327,6 +1490,7 @@
         <li class="nav-item"><a href="#beneficios">Club de Beneficios</a></li>
         <li class="nav-item"><a href="#planes">Planes</a></li>
         <li class="nav-item"><a href="#comunidad">Comunidad</a></li>
+        <li class="nav-item"><a href="#registro">Registro</a></li>
         <li class="nav-item">
           <a href="https://forms.kommo.com/rcdcdld" target="_blank" rel="noopener noreferrer" class="nav-cta">
             Inscribirme
@@ -1370,7 +1534,7 @@
       <div class="hero-media-wrapper">
         <div class="hero-main-card">
           <div class="hero-img-inner">
-            <img src="images/box_action_1.jpg" alt="Alumnos entrenando en Inguz Box Morón">
+            <img src="images/hero_gym.webp" alt="Instalaciones de entrenamiento en Inguz Box Morón">
           </div>
           <div class="hero-metric-float">
             <div class="metric-item">
@@ -1614,15 +1778,15 @@
         </div>
       </div>
 
-      <!-- Circo Kids -->
+      <!-- Circo -->
       <div class="special-card">
         <div class="special-img-wrapper">
-          <img src="images/box_action_4.jpg" alt="Circo Kids en Inguz Box">
+          <img src="images/circo.webp" alt="Circo para niños en Inguz Box Morón">
           <span class="special-badge-float">4 a 8 Años</span>
         </div>
         <div class="special-content">
           <div>
-            <h3>Circo Kids & Minis</h3>
+            <h3>Circo</h3>
             <p>Acrobacias en tela, trapecio, rolidos, malabares y coordinación en un espacio cuidado donde los chicos aprenden divirtiéndose en equipo.</p>
           </div>
           <div class="special-cta-row">
@@ -1634,15 +1798,15 @@
         </div>
       </div>
 
-      <!-- Acrotelas Adultos -->
+      <!-- Acrotelas -->
       <div class="special-card">
         <div class="special-img-wrapper">
-          <img src="images/box_action_3.jpg" alt="Acrotelas en Inguz Box">
+          <img src="images/acrotela.webp" alt="Acrotelas en Inguz Box">
           <span class="special-badge-float">Jóvenes & Adultos</span>
         </div>
         <div class="special-content">
           <div>
-            <h3>Acrotelas & Aéreo</h3>
+            <h3>Acrotelas</h3>
             <p>Desarrollá fuerza dorsal, agarre y flexibilidad en alturas. Progresiones adaptadas tanto para principiantes desde cero como para niveles intermedios.</p>
           </div>
           <div class="special-cta-row">
@@ -1657,12 +1821,12 @@
       <!-- Bachata -->
       <div class="special-card">
         <div class="special-img-wrapper">
-          <img src="images/box_action_2.jpg" alt="Clase de Bachata en Morón">
+          <img src="images/bachata.webp" alt="Clase de Bachata en Morón">
           <span class="special-badge-float">Baile Social</span>
         </div>
         <div class="special-content">
           <div>
-            <h3>Bachata Sensual</h3>
+            <h3>Bachata</h3>
             <p>Técnica de pasos, musicalidad, disociación corporal y baile en pareja. No necesitás venir con pareja previa para sumarte a la clase.</p>
           </div>
           <div class="special-cta-row">
@@ -1677,12 +1841,12 @@
       <!-- Axé Ritmos Brasileros -->
       <div class="special-card">
         <div class="special-img-wrapper">
-          <img src="images/box_action_5.jpg" alt="Axé y ritmos brasileros en Morón">
+          <img src="images/axe.jpg" alt="Axé y ritmos brasileros en Morón">
           <span class="special-badge-float">Ritmos Brasileros</span>
         </div>
         <div class="special-content">
           <div>
-            <h3>Axé & Brasil</h3>
+            <h3>Axé</h3>
             <p>Coreografías contagiosas, ritmo enérgico y cardio de alto impacto para divertirte y sudar al máximo con la mejor onda de Morón.</p>
           </div>
           <div class="special-cta-row">
@@ -1694,15 +1858,18 @@
         </div>
       </div>
 
-      <!-- Kickboxing Especial -->
+      <!-- Kickboxing con Video en Loop -->
       <div class="special-card">
         <div class="special-img-wrapper">
-          <img src="images/flyer_boxfit.png" alt="Kickboxing en Inguz Box Morón">
+          <video autoplay muted loop playsinline poster="images/boxing.webp" style="width: 100%; height: 100%; object-fit: cover;">
+            <source src="images/kickboxing_video.mp4" type="video/mp4">
+            <source src="images/kickboxing_video.mov" type="video/quicktime">
+          </video>
           <span class="special-badge-float">Contacto & Defensa</span>
         </div>
         <div class="special-content">
           <div>
-            <h3>Kickboxing Pro</h3>
+            <h3>Kickboxing</h3>
             <p>Aprende las técnicas efectivas de patadas y golpes con profesores federados. Ideal para acondicionamiento físico de combate y disciplina.</p>
           </div>
           <div class="special-cta-row">
@@ -1740,7 +1907,10 @@
       <!-- SanAndo -->
       <div class="benefit-item-card">
         <div>
-          <span class="benefit-cat-pill">Cafetería & Saludable</span>
+          <span class="benefit-cat-pill">☕ Cafetería & Saludable</span>
+          <div class="benefit-logo-box">
+            <img src="images/logos/logo_sanando.png" alt="SanAndo Morón Logo" loading="lazy">
+          </div>
           <h4>SanAndo</h4>
           <p class="benefit-loc">📍 Salta 298, Morón</p>
         </div>
@@ -1753,7 +1923,10 @@
       <!-- 106 Cervecería -->
       <div class="benefit-item-card">
         <div>
-          <span class="benefit-cat-pill">Gastronomía & Bar</span>
+          <span class="benefit-cat-pill">🍺 Gastronomía & Bar</span>
+          <div class="benefit-logo-box">
+            <img src="images/logos/logo_106.png" alt="106 Cervecería Logo" loading="lazy">
+          </div>
           <h4>106 Cervecería</h4>
           <p class="benefit-loc">📍 Mendoza 152 y 106, Morón</p>
         </div>
@@ -1766,7 +1939,10 @@
       <!-- Mundo Líquido -->
       <div class="benefit-item-card">
         <div>
-          <span class="benefit-cat-pill">Vinos & Bebidas</span>
+          <span class="benefit-cat-pill">🍷 Vinos & Bebidas</span>
+          <div class="benefit-logo-box">
+            <img src="images/logos/logo_mundoliquido.png" alt="Mundo Líquido Logo" loading="lazy">
+          </div>
           <h4>Mundo Líquido</h4>
           <p class="benefit-loc">📍 Mendoza 190, Morón</p>
         </div>
@@ -1779,7 +1955,10 @@
       <!-- JottaDe -->
       <div class="benefit-item-card">
         <div>
-          <span class="benefit-cat-pill">Indumentaria Online</span>
+          <span class="benefit-cat-pill">👕 Indumentaria Deportiva</span>
+          <div class="benefit-logo-box">
+            <img src="images/logos/logo_jottade.png" alt="JottaDe Logo" loading="lazy">
+          </div>
           <h4>JottaDe</h4>
           <p class="benefit-loc">🌐 www.jdarg.com.ar</p>
         </div>
@@ -1792,7 +1971,10 @@
       <!-- El 10 Librería -->
       <div class="benefit-item-card">
         <div>
-          <span class="benefit-cat-pill">Librería & Cotillón</span>
+          <span class="benefit-cat-pill">📚 Librería & Cotillón</span>
+          <div class="benefit-logo-box">
+            <img src="images/logos/logo_el10.png" alt="Librería El 10 Logo" loading="lazy">
+          </div>
           <h4>El 10</h4>
           <p class="benefit-loc">📍 Buen Viaje 818, Morón</p>
         </div>
@@ -1805,7 +1987,10 @@
       <!-- Flores Sutil's -->
       <div class="benefit-item-card">
         <div>
-          <span class="benefit-cat-pill">Florería & Regalos</span>
+          <span class="benefit-cat-pill">💐 Florería & Regalos</span>
+          <div class="benefit-logo-box">
+            <img src="images/logos/logo_sutils.png" alt="Flores Sutil's Logo" loading="lazy">
+          </div>
           <h4>Flores Sutil's</h4>
           <p class="benefit-loc">📍 Salta 191, Morón</p>
         </div>
@@ -1818,7 +2003,10 @@
       <!-- TBR Valijas -->
       <div class="benefit-item-card">
         <div>
-          <span class="benefit-cat-pill">Equipaje & Valijas</span>
+          <span class="benefit-cat-pill">🧳 Equipaje & Valijas</span>
+          <div class="benefit-logo-box">
+            <img src="images/logos/logo_tbr.png" alt="TBR Valijas Logo" loading="lazy">
+          </div>
           <h4>TBR Valijas</h4>
           <p class="benefit-loc">📍 Alte. Brown 921, Morón</p>
         </div>
@@ -1831,7 +2019,10 @@
       <!-- Óptica San José -->
       <div class="benefit-item-card">
         <div>
-          <span class="benefit-cat-pill">Salud Visual</span>
+          <span class="benefit-cat-pill">👓 Salud Visual</span>
+          <div class="benefit-logo-box">
+            <img src="images/logos/logo_optica_sanjose.png" alt="Óptica San José Logo" loading="lazy">
+          </div>
           <h4>Óptica San José</h4>
           <p class="benefit-loc">📍 Mendoza 52, Morón</p>
         </div>
@@ -1844,7 +2035,10 @@
       <!-- La Corona -->
       <div class="benefit-item-card">
         <div>
-          <span class="benefit-cat-pill">Indumentaria</span>
+          <span class="benefit-cat-pill">👑 Indumentaria Masculina</span>
+          <div class="benefit-logo-box">
+            <img src="images/logos/logo_lacorona.png" alt="La Corona Logo" loading="lazy">
+          </div>
           <h4>La Corona</h4>
           <p class="benefit-loc">📍 9 de Julio 18, Morón</p>
         </div>
@@ -1857,7 +2051,10 @@
       <!-- Makeup Nails Room -->
       <div class="benefit-item-card">
         <div>
-          <span class="benefit-cat-pill">Belleza & Uñas</span>
+          <span class="benefit-cat-pill">💅 Belleza & Uñas</span>
+          <div class="benefit-logo-box">
+            <img src="images/logos/logo_makeup_nails.png" alt="Makeup Nails Room Logo" loading="lazy">
+          </div>
           <h4>Makeup Nails Room</h4>
           <p class="benefit-loc">📱 @make_up_nails_room</p>
         </div>
@@ -1870,7 +2067,10 @@
       <!-- H2OIL Lubricentro -->
       <div class="benefit-item-card">
         <div>
-          <span class="benefit-cat-pill">Automotor & Servicios</span>
+          <span class="benefit-cat-pill">🚗 Automotor & Servicios</span>
+          <div class="benefit-logo-box">
+            <img src="images/logos/logo_h2oil.png" alt="H2OIL Lubricentro Logo" loading="lazy">
+          </div>
           <h4>H2OIL Lubricentro</h4>
           <p class="benefit-loc">📍 Int. Grant 298, Morón</p>
         </div>
@@ -1883,7 +2083,10 @@
       <!-- Vía Camarone -->
       <div class="benefit-item-card">
         <div>
-          <span class="benefit-cat-pill">Pescadería Premium</span>
+          <span class="benefit-cat-pill">🦐 Pescadería Premium</span>
+          <div class="benefit-logo-box">
+            <img src="images/logos/logo_viacamarone.png" alt="Vía Camarone Logo" loading="lazy">
+          </div>
           <h4>Vía Camarone</h4>
           <p class="benefit-loc">📍 Alte. Brown 681, Morón</p>
         </div>
@@ -1896,7 +2099,10 @@
       <!-- Electrohogar -->
       <div class="benefit-item-card">
         <div>
-          <span class="benefit-cat-pill">Artículos del Hogar</span>
+          <span class="benefit-cat-pill">⚡ Artículos del Hogar</span>
+          <div class="benefit-logo-box">
+            <img src="images/logos/logo_electrohogar.png" alt="Electrohogar Logo" loading="lazy">
+          </div>
           <h4>Electrohogar</h4>
           <p class="benefit-loc">📍 Mendoza 23, Morón</p>
         </div>
@@ -1909,7 +2115,10 @@
       <!-- Universidad de Morón -->
       <div class="benefit-item-card" style="border: 2px solid var(--primary); background: #fafff8;">
         <div>
-          <span class="benefit-cat-pill" style="background: var(--primary); color: #000;">Convenio Universitario</span>
+          <span class="benefit-cat-pill" style="background: var(--primary); color: #000;">🎓 Convenio Universitario</span>
+          <div class="benefit-logo-box" style="background: #ffffff;">
+            <span style="font-family:'Oswald',sans-serif;font-size:18px;font-weight:700;color:#003366;letter-spacing:1px;">🎓 UNIV. DE MORÓN</span>
+          </div>
           <h4>Univ. de Morón (UM)</h4>
           <p class="benefit-loc">🎓 Estudiantes y Docentes</p>
         </div>
@@ -1930,42 +2139,113 @@
     </div>
 
     <div class="showcase-grid">
-      <div class="showcase-card">
-        <img src="images/box_action_1.jpg" alt="Musculación y peso libre en Morón">
-        <div class="showcase-overlay">
-          <span>Sala de Musculación & Peso Libre</span>
+      <!-- Card 1 -->
+      <a href="https://www.instagram.com/inguzbox/" target="_blank" rel="noopener noreferrer" class="showcase-card" aria-label="Ver en Instagram @inguzbox">
+        <img src="images/comunidad_1.jpg" alt="Comunidad Inguz Box Morón" loading="lazy">
+        <div class="showcase-ig-overlay">
+          <svg class="showcase-ig-icon" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          <div class="showcase-stats-row">
+            <span class="showcase-stat-item likes">
+              <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+              <span>184</span>
+            </span>
+            <span class="showcase-stat-item">
+              <svg viewBox="0 0 24 24"><path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18z"/></svg>
+              <span>24</span>
+            </span>
+          </div>
         </div>
-      </div>
-      <div class="showcase-card">
-        <img src="images/box_action_2.jpg" alt="Clases grupales dinámicas">
-        <div class="showcase-overlay">
-          <span>Clases Grupales Motivadoras</span>
+      </a>
+
+      <!-- Card 2 -->
+      <a href="https://www.instagram.com/inguzbox/" target="_blank" rel="noopener noreferrer" class="showcase-card" aria-label="Ver en Instagram @inguzbox">
+        <img src="images/comunidad_2.jpg" alt="Entrenamiento en Inguz Box Morón" loading="lazy">
+        <div class="showcase-ig-overlay">
+          <svg class="showcase-ig-icon" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          <div class="showcase-stats-row">
+            <span class="showcase-stat-item likes">
+              <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+              <span>219</span>
+            </span>
+            <span class="showcase-stat-item">
+              <svg viewBox="0 0 24 24"><path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18z"/></svg>
+              <span>31</span>
+            </span>
+          </div>
         </div>
-      </div>
-      <div class="showcase-card">
-        <img src="images/box_action_3.jpg" alt="Acrotelas y calistenia">
-        <div class="showcase-overlay">
-          <span>Entrenamiento Aéreo & Calistenia</span>
+      </a>
+
+      <!-- Card 3 -->
+      <a href="https://www.instagram.com/inguzbox/" target="_blank" rel="noopener noreferrer" class="showcase-card" aria-label="Ver en Instagram @inguzbox">
+        <img src="images/comunidad_3.jpg" alt="Alumnos en clase grupal Inguz Box" loading="lazy">
+        <div class="showcase-ig-overlay">
+          <svg class="showcase-ig-icon" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          <div class="showcase-stats-row">
+            <span class="showcase-stat-item likes">
+              <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+              <span>305</span>
+            </span>
+            <span class="showcase-stat-item">
+              <svg viewBox="0 0 24 24"><path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18z"/></svg>
+              <span>42</span>
+            </span>
+          </div>
         </div>
-      </div>
-      <div class="showcase-card">
-        <img src="images/box_action_4.jpg" alt="Actividades infantiles y circo">
-        <div class="showcase-overlay">
-          <span>Espacio Kids & Movimiento</span>
+      </a>
+
+      <!-- Card 4 -->
+      <a href="https://www.instagram.com/inguzbox/" target="_blank" rel="noopener noreferrer" class="showcase-card" aria-label="Ver en Instagram @inguzbox">
+        <img src="images/comunidad_4.jpg" alt="Actividades en Inguz Box" loading="lazy">
+        <div class="showcase-ig-overlay">
+          <svg class="showcase-ig-icon" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          <div class="showcase-stats-row">
+            <span class="showcase-stat-item likes">
+              <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+              <span>172</span>
+            </span>
+            <span class="showcase-stat-item">
+              <svg viewBox="0 0 24 24"><path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18z"/></svg>
+              <span>19</span>
+            </span>
+          </div>
         </div>
-      </div>
-      <div class="showcase-card">
-        <img src="images/box_action_5.jpg" alt="Ritmos y baile">
-        <div class="showcase-overlay">
-          <span>Ritmos, Baile & Cardio</span>
+      </a>
+
+      <!-- Card 5 -->
+      <a href="https://www.instagram.com/inguzbox/" target="_blank" rel="noopener noreferrer" class="showcase-card" aria-label="Ver en Instagram @inguzbox">
+        <img src="images/comunidad_5.jpg" alt="Instalaciones y entrenamiento Inguz" loading="lazy">
+        <div class="showcase-ig-overlay">
+          <svg class="showcase-ig-icon" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          <div class="showcase-stats-row">
+            <span class="showcase-stat-item likes">
+              <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+              <span>260</span>
+            </span>
+            <span class="showcase-stat-item">
+              <svg viewBox="0 0 24 24"><path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18z"/></svg>
+              <span>37</span>
+            </span>
+          </div>
         </div>
-      </div>
-      <div class="showcase-card">
-        <img src="images/hero_gym.webp" alt="Instalaciones de Inguz Box">
-        <div class="showcase-overlay">
-          <span>Gral. Machado 944, Morón</span>
+      </a>
+
+      <!-- Card 6 -->
+      <a href="https://www.instagram.com/inguzbox/" target="_blank" rel="noopener noreferrer" class="showcase-card" aria-label="Ver en Instagram @inguzbox">
+        <img src="images/comunidad_6.jpg" alt="Alumnos y profes en Inguz Box Morón" loading="lazy">
+        <div class="showcase-ig-overlay">
+          <svg class="showcase-ig-icon" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          <div class="showcase-stats-row">
+            <span class="showcase-stat-item likes">
+              <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+              <span>348</span>
+            </span>
+            <span class="showcase-stat-item">
+              <svg viewBox="0 0 24 24"><path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18z"/></svg>
+              <span>56</span>
+            </span>
+          </div>
         </div>
-      </div>
+      </a>
     </div>
   </section>
 
@@ -2132,6 +2412,45 @@
     </div>
   </section>
 
+  <!-- SUBSCRIPTION SECTION (PRE-FOOTER) -->
+  <section class="subscription-section" id="registro">
+    <div class="subscription-container">
+      <div class="subscription-card">
+        <div class="subscription-header">
+          <span class="section-pill">Comunidad & Novedades</span>
+          <h2>REGISTRATE EN NUESTRA WEB</h2>
+          <p>Dejanos tus datos para recibir novedades exclusivas, promociones especiales del box e información de actividades.</p>
+        </div>
+
+        <form class="subscription-form" action="gracias.html" method="GET">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="sub_nombre">Nombre Completo *</label>
+              <input type="text" id="sub_nombre" name="nombre" class="form-control" placeholder="Ej. Juan Pérez" required>
+            </div>
+
+            <div class="form-group">
+              <label for="sub_telefono">Celular / WhatsApp *</label>
+              <input type="tel" id="sub_telefono" name="telefono" class="form-control" placeholder="Ej. 11 5615-7093" required>
+            </div>
+
+            <div class="form-group">
+              <label for="sub_email">Correo Electrónico *</label>
+              <input type="email" id="sub_email" name="email" class="form-control" placeholder="Ej. juan@gmail.com" required>
+            </div>
+          </div>
+
+          <div class="form-submit-row">
+            <button type="submit" class="btn btn-primary btn-lg btn-submit">
+              Suscribirme
+            </button>
+          </div>
+          <p class="form-note">🔒 Cuidamos tu privacidad. Sin spam, solo información importante y novedades de Inguz Box.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
   <!-- FOOTER -->
   <footer class="footer">
     <div class="footer-container">
@@ -2173,6 +2492,7 @@
           <li><a href="https://masajes.inguzbox.com" target="_blank" rel="noopener noreferrer">Masajes & Quiromasaje</a></li>
           <li><a href="https://depilacion.inguzbox.com" target="_blank" rel="noopener noreferrer">Depilación Láser</a></li>
           <li><a href="#beneficios">Club de Beneficios</a></li>
+          <li><a href="#registro">Registro en la Web</a></li>
           <li><a href="https://forms.kommo.com/rcdcdld" target="_blank" rel="noopener noreferrer">Inscripción Online</a></li>
         </ul>
       </div>
