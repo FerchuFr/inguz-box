@@ -734,17 +734,18 @@
       color: var(--primary);
     }
 
-    /* CLUB DE BENEFICIOS (LIGHT SECTION) */
+    /* CLUB DE BENEFICIOS */
     .benefits-section {
-      background: var(--bg-light);
-      color: var(--text-dark);
+      background: var(--bg-dark-alt);
       padding: 90px 20px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      position: relative;
     }
     .benefits-section .section-header h2 {
-      color: var(--text-dark);
+      color: #ffffff;
     }
     .benefits-section .section-header p {
-      color: var(--text-dark-muted);
+      color: var(--text-muted);
     }
     .benefits-banner-card {
       max-width: 1200px;
@@ -759,7 +760,7 @@
       align-items: center;
       flex-wrap: wrap;
       gap: 20px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7), 0 0 25px rgba(120, 183, 79, 0.15);
     }
     .benefits-banner-text h3 {
       font-size: 26px;
@@ -779,84 +780,33 @@
       margin: 0 auto;
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 18px;
+      gap: 20px;
     }
-    .benefit-item-card {
-      background: #ffffff;
-      border: 1px solid #e5e7eb;
+    .benefit-card {
+      background: #000000;
+      border: 1px solid rgba(120, 183, 79, 0.3);
       border-radius: var(--radius-md);
-      padding: 18px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      transition: var(--transition);
-      box-shadow: 0 2px 8px rgba(0,0,0,0.03);
-    }
-    .benefit-item-card:hover {
-      transform: translateY(-4px);
-      border-color: var(--primary);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.08);
-    }
-    .benefit-cat-pill {
-      font-size: 10.5px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.3px;
-      color: #2b5615;
-      background: rgba(120, 183, 79, 0.15);
-      padding: 4px 9px;
-      border-radius: var(--radius-pill);
-      align-self: flex-start;
-      margin-bottom: 10px;
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
-    }
-    .benefit-logo-box {
-      height: 60px;
+      overflow: hidden;
       display: flex;
       align-items: center;
       justify-content: center;
-      background: #fcfcfc;
-      border: 1px solid #ecece7;
-      border-radius: var(--radius-sm);
-      padding: 6px 10px;
-      margin-bottom: 12px;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.6);
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease, box-shadow 0.3s ease;
     }
-    .benefit-logo-box img {
-      max-height: 100%;
-      max-width: 100%;
-      object-fit: contain;
+    .benefit-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--primary);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.8), 0 0 25px rgba(120, 183, 79, 0.35);
     }
-    .benefit-item-card h4 {
-      font-size: 17px;
-      font-weight: 800;
-      color: var(--text-dark);
-      margin-bottom: 3px;
+    .benefit-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
     }
-    .benefit-loc {
-      font-size: 12px;
-      color: var(--text-dark-muted);
-      margin-bottom: 12px;
-    }
-    .benefit-discount-box {
-      background: #f7faf5;
-      border: 1px dashed var(--primary);
-      border-radius: var(--radius-sm);
-      padding: 9px;
-      text-align: center;
-    }
-    .benefit-discount-val {
-      font-family: 'Oswald', sans-serif;
-      font-size: 20px;
-      font-weight: 700;
-      color: #2b5615;
-      line-height: 1.1;
-    }
-    .benefit-discount-cond {
-      font-size: 11px;
-      color: #4b5563;
-      margin-top: 2px;
+    .benefit-card:hover img {
+      transform: scale(1.02);
     }
 
     /* SHOWCASE SECTION (DARK) */
@@ -1905,227 +1855,68 @@
     <!-- Grilla de Comercios -->
     <div class="benefits-grid">
       <!-- SanAndo -->
-      <div class="benefit-item-card">
-        <div>
-          <span class="benefit-cat-pill">☕ Cafetería & Saludable</span>
-          <div class="benefit-logo-box">
-            <img src="images/logos/logo_sanando.png" alt="SanAndo Morón Logo" loading="lazy">
-          </div>
-          <h4>SanAndo</h4>
-          <p class="benefit-loc">📍 Salta 298, Morón</p>
-        </div>
-        <div class="benefit-discount-box">
-          <div class="benefit-discount-val">10% OFF</div>
-          <div class="benefit-discount-cond">En todos los productos</div>
-        </div>
+      <div class="benefit-card">
+        <img src="images/beneficios/card_sanando.webp" alt="SanAndo Café Saludable - Club de Beneficios Inguz Box" loading="lazy">
       </div>
 
       <!-- 106 Cervecería -->
-      <div class="benefit-item-card">
-        <div>
-          <span class="benefit-cat-pill">🍺 Gastronomía & Bar</span>
-          <div class="benefit-logo-box">
-            <img src="images/logos/logo_106.png" alt="106 Cervecería Logo" loading="lazy">
-          </div>
-          <h4>106 Cervecería</h4>
-          <p class="benefit-loc">📍 Mendoza 152 y 106, Morón</p>
-        </div>
-        <div class="benefit-discount-box">
-          <div class="benefit-discount-val">15% OFF</div>
-          <div class="benefit-discount-cond">Efectivo (10% Transferencia)</div>
-        </div>
+      <div class="benefit-card">
+        <img src="images/beneficios/card_106.webp" alt="106 Cervecería - Club de Beneficios Inguz Box" loading="lazy">
       </div>
 
       <!-- Mundo Líquido -->
-      <div class="benefit-item-card">
-        <div>
-          <span class="benefit-cat-pill">🍷 Vinos & Bebidas</span>
-          <div class="benefit-logo-box">
-            <img src="images/logos/logo_mundoliquido.png" alt="Mundo Líquido Logo" loading="lazy">
-          </div>
-          <h4>Mundo Líquido</h4>
-          <p class="benefit-loc">📍 Mendoza 190, Morón</p>
-        </div>
-        <div class="benefit-discount-box">
-          <div class="benefit-discount-val">15% OFF</div>
-          <div class="benefit-discount-cond">Lunes y Viernes en Efectivo/Transf.</div>
-        </div>
+      <div class="benefit-card">
+        <img src="images/beneficios/card_mundoliquido.webp" alt="Mundo Líquido - Club de Beneficios Inguz Box" loading="lazy">
       </div>
 
       <!-- JottaDe -->
-      <div class="benefit-item-card">
-        <div>
-          <span class="benefit-cat-pill">👕 Indumentaria Deportiva</span>
-          <div class="benefit-logo-box">
-            <img src="images/logos/logo_jottade.png" alt="JottaDe Logo" loading="lazy">
-          </div>
-          <h4>JottaDe</h4>
-          <p class="benefit-loc">🌐 www.jdarg.com.ar</p>
-        </div>
-        <div class="benefit-discount-box">
-          <div class="benefit-discount-val">10% OFF</div>
-          <div class="benefit-discount-cond">Cupón web: <strong>INGUZ</strong></div>
-        </div>
+      <div class="benefit-card">
+        <img src="images/beneficios/card_jottade.webp" alt="JottaDe Indumentaria - Club de Beneficios Inguz Box" loading="lazy">
       </div>
 
       <!-- El 10 Librería -->
-      <div class="benefit-item-card">
-        <div>
-          <span class="benefit-cat-pill">📚 Librería & Cotillón</span>
-          <div class="benefit-logo-box">
-            <img src="images/logos/logo_el10.png" alt="Librería El 10 Logo" loading="lazy">
-          </div>
-          <h4>El 10</h4>
-          <p class="benefit-loc">📍 Buen Viaje 818, Morón</p>
-        </div>
-        <div class="benefit-discount-box">
-          <div class="benefit-discount-val">10% OFF</div>
-          <div class="benefit-discount-cond">Débito, transferencia y efectivo</div>
-        </div>
+      <div class="benefit-card">
+        <img src="images/beneficios/card_el10.webp" alt="Librería El 10 - Club de Beneficios Inguz Box" loading="lazy">
       </div>
 
       <!-- Flores Sutil's -->
-      <div class="benefit-item-card">
-        <div>
-          <span class="benefit-cat-pill">💐 Florería & Regalos</span>
-          <div class="benefit-logo-box">
-            <img src="images/logos/logo_sutils.png" alt="Flores Sutil's Logo" loading="lazy">
-          </div>
-          <h4>Flores Sutil's</h4>
-          <p class="benefit-loc">📍 Salta 191, Morón</p>
-        </div>
-        <div class="benefit-discount-box">
-          <div class="benefit-discount-val">15% OFF</div>
-          <div class="benefit-discount-cond">Efectivo (10% Transferencia)</div>
-        </div>
+      <div class="benefit-card">
+        <img src="images/beneficios/card_sutils.webp" alt="Flores Sutil's - Club de Beneficios Inguz Box" loading="lazy">
       </div>
 
       <!-- TBR Valijas -->
-      <div class="benefit-item-card">
-        <div>
-          <span class="benefit-cat-pill">🧳 Equipaje & Valijas</span>
-          <div class="benefit-logo-box">
-            <img src="images/logos/logo_tbr.png" alt="TBR Valijas Logo" loading="lazy">
-          </div>
-          <h4>TBR Valijas</h4>
-          <p class="benefit-loc">📍 Alte. Brown 921, Morón</p>
-        </div>
-        <div class="benefit-discount-box">
-          <div class="benefit-discount-val">20% OFF</div>
-          <div class="benefit-discount-cond">Efectivo + 3 y 6 cuotas sin interés</div>
-        </div>
+      <div class="benefit-card">
+        <img src="images/beneficios/card_tbr.webp" alt="TBR Valijas - Club de Beneficios Inguz Box" loading="lazy">
       </div>
 
       <!-- Óptica San José -->
-      <div class="benefit-item-card">
-        <div>
-          <span class="benefit-cat-pill">👓 Salud Visual</span>
-          <div class="benefit-logo-box">
-            <img src="images/logos/logo_optica_sanjose.png" alt="Óptica San José Logo" loading="lazy">
-          </div>
-          <h4>Óptica San José</h4>
-          <p class="benefit-loc">📍 Mendoza 52, Morón</p>
-        </div>
-        <div class="benefit-discount-box">
-          <div class="benefit-discount-val">30% OFF</div>
-          <div class="benefit-discount-cond">Recetados (20% en sol) Efectivo</div>
-        </div>
+      <div class="benefit-card">
+        <img src="images/beneficios/card_opticasanjose.webp" alt="Óptica San José - Club de Beneficios Inguz Box" loading="lazy">
       </div>
 
       <!-- La Corona -->
-      <div class="benefit-item-card">
-        <div>
-          <span class="benefit-cat-pill">👑 Indumentaria Masculina</span>
-          <div class="benefit-logo-box">
-            <img src="images/logos/logo_lacorona.png" alt="La Corona Logo" loading="lazy">
-          </div>
-          <h4>La Corona</h4>
-          <p class="benefit-loc">📍 9 de Julio 18, Morón</p>
-        </div>
-        <div class="benefit-discount-box">
-          <div class="benefit-discount-val">10% OFF</div>
-          <div class="benefit-discount-cond">En ambas sucursales</div>
-        </div>
+      <div class="benefit-card">
+        <img src="images/beneficios/card_lacorona.webp" alt="La Corona Indumentaria - Club de Beneficios Inguz Box" loading="lazy">
       </div>
 
       <!-- Makeup Nails Room -->
-      <div class="benefit-item-card">
-        <div>
-          <span class="benefit-cat-pill">💅 Belleza & Uñas</span>
-          <div class="benefit-logo-box">
-            <img src="images/logos/logo_makeup_nails.png" alt="Makeup Nails Room Logo" loading="lazy">
-          </div>
-          <h4>Makeup Nails Room</h4>
-          <p class="benefit-loc">📱 @make_up_nails_room</p>
-        </div>
-        <div class="benefit-discount-box">
-          <div class="benefit-discount-val">10% OFF</div>
-          <div class="benefit-discount-cond">Efectivo o Transferencia</div>
-        </div>
+      <div class="benefit-card">
+        <img src="images/beneficios/card_makeup_nails.webp" alt="Makeup Nails Room - Club de Beneficios Inguz Box" loading="lazy">
       </div>
 
       <!-- H2OIL Lubricentro -->
-      <div class="benefit-item-card">
-        <div>
-          <span class="benefit-cat-pill">🚗 Automotor & Servicios</span>
-          <div class="benefit-logo-box">
-            <img src="images/logos/logo_h2oil.png" alt="H2OIL Lubricentro Logo" loading="lazy">
-          </div>
-          <h4>H2OIL Lubricentro</h4>
-          <p class="benefit-loc">📍 Int. Grant 298, Morón</p>
-        </div>
-        <div class="benefit-discount-box">
-          <div class="benefit-discount-val">15% OFF</div>
-          <div class="benefit-discount-cond">Efectivo o 3 cuotas sin interés</div>
-        </div>
+      <div class="benefit-card">
+        <img src="images/beneficios/card_h2oil.webp" alt="H2OIL Lubricentro - Club de Beneficios Inguz Box" loading="lazy">
       </div>
 
       <!-- Vía Camarone -->
-      <div class="benefit-item-card">
-        <div>
-          <span class="benefit-cat-pill">🦐 Pescadería Premium</span>
-          <div class="benefit-logo-box">
-            <img src="images/logos/logo_viacamarone.png" alt="Vía Camarone Logo" loading="lazy">
-          </div>
-          <h4>Vía Camarone</h4>
-          <p class="benefit-loc">📍 Alte. Brown 681, Morón</p>
-        </div>
-        <div class="benefit-discount-box">
-          <div class="benefit-discount-val">10% OFF</div>
-          <div class="benefit-discount-cond">De Lunes a Sábados</div>
-        </div>
+      <div class="benefit-card">
+        <img src="images/beneficios/card_viacamarone.webp" alt="Vía Camarone - Club de Beneficios Inguz Box" loading="lazy">
       </div>
 
       <!-- Electrohogar -->
-      <div class="benefit-item-card">
-        <div>
-          <span class="benefit-cat-pill">⚡ Artículos del Hogar</span>
-          <div class="benefit-logo-box">
-            <img src="images/logos/logo_electrohogar.png" alt="Electrohogar Logo" loading="lazy">
-          </div>
-          <h4>Electrohogar</h4>
-          <p class="benefit-loc">📍 Mendoza 23, Morón</p>
-        </div>
-        <div class="benefit-discount-box">
-          <div class="benefit-discount-val">10% OFF</div>
-          <div class="benefit-discount-cond">Los días sábados</div>
-        </div>
-      </div>
-
-      <!-- Universidad de Morón -->
-      <div class="benefit-item-card" style="border: 2px solid var(--primary); background: #fafff8;">
-        <div>
-          <span class="benefit-cat-pill" style="background: var(--primary); color: #000;">🎓 Convenio Universitario</span>
-          <div class="benefit-logo-box" style="background: #ffffff;">
-            <span style="font-family:'Oswald',sans-serif;font-size:18px;font-weight:700;color:#003366;letter-spacing:1px;">🎓 UNIV. DE MORÓN</span>
-          </div>
-          <h4>Univ. de Morón (UM)</h4>
-          <p class="benefit-loc">🎓 Estudiantes y Docentes</p>
-        </div>
-        <div class="benefit-discount-box" style="background: #ffffff;">
-          <div class="benefit-discount-val">20% OFF</div>
-          <div class="benefit-discount-cond">En plan mensual en efectivo</div>
-        </div>
+      <div class="benefit-card">
+        <img src="images/beneficios/card_electrohogar.webp" alt="Electrohogar - Club de Beneficios Inguz Box" loading="lazy">
       </div>
     </div>
   </section>
