@@ -21,8 +21,8 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yoga & Stretching en Morón Centro | Inguz Box Training</title>
-  <meta name="description" content="Yoga & Stretching en Inguz Box Morón. Encontrá tu espacio de calma en medio del ritmo diario. Posturas de elongación profunda, respiración consciente y descompresión muscular. Reservá tu primera clase gratis.">
+  <title>Yoga & Stretching en Morón Centro | Flexibilidad y Postura | Inguz Box</title>
+  <meta name="description" content="Clases de Yoga y Stretching en Morón Centro. Mejorá tu flexibilidad, aliviá contracturas musculares y desconectá del estrés con respiración consciente. Primera clase sin costo.">
   <link rel="icon" type="image/png" href="../images/cropped-logo.png">
 
   <!-- Google Fonts -->
@@ -35,36 +35,48 @@
       --primary: #78B74F;
       --primary-hover: #8cd15e;
       --primary-glow: rgba(120, 183, 79, 0.35);
-      --bg-dark: #000000;
-      --bg-dark-alt: #0a0d0b;
+      --bg-dark: #0a0d0b;
       --bg-card: #121713;
-      --bg-card-border: rgba(120, 183, 79, 0.22);
+      --bg-card-border: rgba(120, 183, 79, 0.2);
       --bg-light: #FFFEF8;
       --text-main: #FFFEF8;
       --text-muted: #abb8c3;
-      --text-dark: #121513;
+      --text-dark: #1a1a1a;
       --text-dark-muted: #58585A;
-      --radius-sm: 8px;
-      --radius-md: 14px;
-      --radius-lg: 20px;
-      --radius-pill: 999px;
+      --radius: 12px;
       --transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
       background-color: var(--bg-dark);
       color: var(--text-main);
       line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
     }
-    a { text-decoration: none; color: inherit; transition: var(--transition); }
-    img { max-width: 100%; height: auto; display: block; }
 
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img, video {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* TOP BAR */
     .topbar {
-      background: #000;
-      border-bottom: 1px solid rgba(255,255,255,0.08);
-      padding: 9px 20px;
+      background: #000000;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 10px 20px;
       font-size: 13px;
     }
     .topbar-container {
@@ -76,6 +88,20 @@
       flex-wrap: wrap;
       gap: 10px;
     }
+    .topbar-brand {
+      color: var(--primary);
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .topbar-loc {
+      color: #dedede;
+      font-weight: 500;
+    }
+
+    /* HEADER / NAVBAR */
     .header {
       background: rgba(10, 13, 11, 0.94);
       backdrop-filter: blur(14px);
@@ -83,11 +109,11 @@
       top: 0;
       z-index: 100;
       border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-      padding: 14px 20px;
     }
     .nav-container {
       max-width: 1200px;
       margin: 0 auto;
+      padding: 14px 20px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -96,41 +122,77 @@
       display: flex;
       align-items: center;
       gap: 12px;
-    }
-    .logo-img { height: 36px; width: auto; }
-    .brand-pill {
-      background: rgba(120, 183, 79, 0.15);
-      border: 1px solid var(--primary);
-      color: var(--primary);
       font-family: 'Oswald', sans-serif;
-      font-size: 11px;
+      font-size: 22px;
       font-weight: 700;
-      letter-spacing: 1.5px;
-      padding: 4px 10px;
-      border-radius: var(--radius-pill);
+      letter-spacing: 1.2px;
+      color: #fff;
     }
-    .nav-cta {
+    .logo-img {
+      height: 36px;
+      width: auto;
+    }
+    .logo-badge {
+      background: var(--primary);
+      color: #000;
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      font-weight: 800;
+      padding: 3px 8px;
+      border-radius: 4px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+      align-items: center;
+    }
+    .nav-links a {
+      color: #dedede;
+      font-size: 14px;
+      font-weight: 600;
+      transition: var(--transition);
+    }
+    .nav-links a:hover {
+      color: var(--primary);
+    }
+    .btn-nav {
       background: var(--primary);
       color: #000 !important;
-      font-weight: 700;
-      font-size: 13.5px;
       padding: 9px 18px;
-      border-radius: var(--radius-pill);
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 13px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      box-shadow: 0 4px 14px var(--primary-glow);
+      transition: var(--transition);
     }
-    .nav-cta:hover {
+    .btn-nav:hover {
       background: var(--primary-hover);
+      transform: translateY(-1px);
     }
 
-    .hero-act {
-      padding: 70px 20px 80px;
-      border-bottom: 1px solid rgba(120,183,79,0.15);
-      background: radial-gradient(circle at top right, rgba(120,183,79,0.12), transparent 60%);
-    }}
-    .hero-act-grid {
+    /* CONTAINER */
+    .container {
       max-width: 1200px;
       margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* HERO */
+    .hero {
+      padding: 70px 0 80px;
+      position: relative;
+      overflow: hidden;
+      background: radial-gradient(circle at 80% 20%, rgba(120, 183, 79, 0.12) 0%, transparent 60%);
+    }
+    .hero-grid {
       display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
+      grid-template-columns: 1.15fr 0.85fr;
       gap: 50px;
       align-items: center;
     }
@@ -143,249 +205,579 @@
       margin-bottom: 16px;
       font-weight: 600;
     }
-    .act-badge {
-      display: inline-block;
-      background: rgba(120,183,79,0.15);
+    .back-link:hover {
+      text-decoration: underline;
+    }
+    .hero-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(120, 183, 79, 0.12);
       border: 1px solid var(--primary);
       color: var(--primary);
-      font-size: 11.5px;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 13px;
       font-weight: 700;
-      padding: 4px 12px;
-      border-radius: var(--radius-pill);
       text-transform: uppercase;
-      margin-bottom: 16px;
+      letter-spacing: 0.8px;
+      margin-bottom: 22px;
     }
-    .hero-act h1 {
-      font-size: 46px;
+    .hero-title {
+      font-family: 'Inter', sans-serif;
+      font-size: 44px;
       font-weight: 900;
       line-height: 1.15;
-      margin-bottom: 16px;
+      color: #FFFEF8;
+      margin-bottom: 20px;
+      letter-spacing: -0.8px;
     }
-    .hero-act h1 span { color: var(--primary); display: block; }
-    .hero-act p {
-      font-size: 16.5px;
-      color: #d1d5db;
-      margin-bottom: 24px;
+    .hero-title span {
+      color: var(--primary);
+      display: block;
+    }
+    .hero-subtitle {
+      color: var(--text-muted);
+      font-size: 17px;
       line-height: 1.6;
+      margin-bottom: 28px;
     }
-    .act-benefits {
+    .hero-features {
       list-style: none;
+      margin-bottom: 35px;
       display: flex;
       flex-direction: column;
-      gap: 10px;
-      margin-bottom: 30px;
-    }
-    .act-benefits li {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-size: 14.5px;
-      color: #eaeaea;
-    }
-    .act-benefits li span { color: var(--primary); font-weight: 800; }
-    .act-actions {
-      display: flex;
-      align-items: center;
       gap: 14px;
+    }
+    .hero-features li {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 15px;
+      font-weight: 500;
+      color: #f0f0f0;
+    }
+    .check-icon {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: var(--primary);
+      color: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+
+    .hero-actions {
+      display: flex;
+      align-items: center;
+      gap: 16px;
       flex-wrap: wrap;
     }
-    .btn {
+    .cta-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: var(--primary);
+      color: #000;
+      font-weight: 800;
+      font-size: 15px;
+      padding: 16px 28px;
+      border-radius: 10px;
+      box-shadow: 0 10px 25px var(--primary-glow);
+      transition: var(--transition);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .cta-btn:hover {
+      background: var(--primary-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 14px 30px rgba(120, 183, 79, 0.5);
+    }
+    .btn-secondary {
       display: inline-flex;
       align-items: center;
       justify-content: center;
       gap: 8px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(120, 183, 79, 0.5);
+      color: #fff;
       font-weight: 700;
-      border-radius: var(--radius-pill);
-      padding: 14px 28px;
-      cursor: pointer;
       font-size: 15px;
+      padding: 16px 24px;
+      border-radius: 10px;
+      transition: var(--transition);
     }
-    .btn-primary {
-      background: var(--primary);
-      color: #000;
-      box-shadow: 0 4px 20px var(--primary-glow);
-    }
-    .btn-primary:hover {
-      background: var(--primary-hover);
+    .btn-secondary:hover {
+      background: rgba(120, 183, 79, 0.15);
+      border-color: var(--primary);
+      color: #fff;
       transform: translateY(-2px);
     }
-    .btn-outline {
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(120,183,79,0.5);
-      color: #fff;
+    .cta-subtext {
+      color: #718096;
+      font-size: 13px;
+      margin-top: 14px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      width: 100%;
     }
-    .btn-outline:hover {
-      background: rgba(120,183,79,0.15);
-      border-color: var(--primary);
+
+    /* HERO PROFILE / DISCIPLINE CARD (SAME PROPORTION AS MASAJES & DEPILACION) */
+    .profile-card {
+      background: linear-gradient(145deg, #151c16 0%, #1a221b 100%);
+      border: 2px solid var(--primary);
+      border-radius: 20px;
+      padding: 24px;
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6);
+      position: relative;
     }
-    .act-img-box {
-      background: var(--bg-card);
-      border: 1px solid var(--bg-card-border);
-      border-radius: var(--radius-lg);
-      padding: 12px;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.6);
-      aspect-ratio: 4/3;
+    .profile-img-wrap {
+      position: relative;
+      border-radius: 14px;
       overflow: hidden;
+      margin-bottom: 20px;
+      aspect-ratio: 4/3.5;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      background: #000;
     }
-    .act-img-box img {
+    .profile-img-wrap img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      border-radius: var(--radius-md);
+      object-position: center;
+      display: block;
+    }
+    .profile-badge-floating {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      background: rgba(0, 0, 0, 0.85);
+      backdrop-filter: blur(8px);
+      border: 1px solid var(--primary);
+      color: var(--primary);
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .profile-title {
+      font-size: 24px;
+      font-weight: 800;
+      color: #FFFEF8;
+      margin-bottom: 4px;
+    }
+    .profile-spec {
+      color: var(--primary);
+      font-weight: 700;
+      font-size: 14px;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .profile-desc {
+      color: var(--text-muted);
+      font-size: 14px;
+      line-height: 1.5;
+      margin-bottom: 18px;
+    }
+    .profile-location {
+      background: rgba(0, 0, 0, 0.4);
+      padding: 12px 16px;
+      border-radius: 10px;
+      border-left: 4px solid var(--primary);
+      font-size: 13px;
+    }
+    .profile-location strong {
+      color: #fff;
+      display: block;
+      margin-bottom: 2px;
+    }
+    .profile-location span {
+      color: #a0a0a0;
     }
 
-    /* METHOD SECTION (LIGHT) */
-    .method-section {
-      background: var(--bg-light);
-      color: var(--text-dark);
-      padding: 80px 20px;
+    /* MULTIMEDIA SHOWCASE GALLERY */
+    .gallery-section {
+      padding: 70px 0;
+      background: #0d120e;
+      border-top: 1px solid rgba(255, 255, 255, 0.04);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.04);
     }
-    .section-header {
+    .section-header-dark {
       text-align: center;
-      max-width: 700px;
-      margin: 0 auto 40px;
+      max-width: 760px;
+      margin: 0 auto 50px;
     }
-    .section-header h2 {
-      font-size: 34px;
-      font-weight: 800;
-      color: var(--text-dark);
+    .section-title-dark {
+      font-size: 36px;
+      font-weight: 900;
+      color: var(--primary);
+      letter-spacing: -0.5px;
       margin-bottom: 12px;
     }
-    .section-header p {
-      font-size: 15px;
-      color: var(--text-dark-muted);
+    .section-subtitle-dark {
+      color: #A0A0A0;
+      font-size: 17px;
     }
-    .pillars-grid {
-      max-width: 1100px;
-      margin: 0 auto;
+    .gallery-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 24px;
     }
-    .pillar-card {
-      background: #fff;
-      border: 1px solid #e2e8f0;
-      border-top: 4px solid var(--primary);
-      border-radius: var(--radius-md);
-      padding: 26px 22px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    .gallery-item {
+      background: var(--bg-card);
+      border: 1px solid var(--bg-card-border);
+      border-radius: 16px;
+      overflow: hidden;
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
     }
-    .pillar-num {
-      font-family: 'Oswald', sans-serif;
-      font-size: 28px;
-      color: var(--primary);
-      font-weight: 700;
-      line-height: 1;
-      margin-bottom: 8px;
+    .gallery-item:hover {
+      transform: translateY(-4px);
+      border-color: var(--primary);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.4);
     }
-    .pillar-card h3 {
-      font-size: 18px;
+    .gallery-media {
+      height: 220px;
+      overflow: hidden;
+      background: #000;
+      position: relative;
+    }
+    .gallery-media img, .gallery-media video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+    .gallery-item:hover .gallery-media img {
+      transform: scale(1.04);
+    }
+    .gallery-info {
+      padding: 18px;
+      flex-grow: 1;
+    }
+    .gallery-tag {
+      font-size: 11px;
       font-weight: 800;
-      margin-bottom: 10px;
-      color: var(--text-dark);
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 6px;
     }
-    .pillar-card p {
+    .gallery-heading {
+      font-size: 17px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 6px;
+    }
+    .gallery-p {
       font-size: 13.5px;
-      color: var(--text-dark-muted);
+      color: var(--text-muted);
       line-height: 1.5;
     }
 
-    /* FAQ (DARK) */
-    .faq-dark {
-      background: var(--bg-dark-alt);
-      padding: 80px 20px;
-      border-top: 1px solid rgba(255,255,255,0.08);
-      border-bottom: 1px solid rgba(255,255,255,0.08);
+    /* SECTION LIGHT: MODALITIES / CATALOG (#FFFEF8) */
+    .section-light {
+      background-color: var(--bg-light);
+      color: var(--text-dark);
+      padding: 85px 0;
     }
-    .faq-dark h2 {
-      color: #fff;
-      font-size: 32px;
+    .section-header-light {
       text-align: center;
-      margin-bottom: 30px;
+      max-width: 760px;
+      margin: 0 auto 55px;
     }
-    .faq-list {
-      max-width: 800px;
-      margin: 0 auto;
+    .section-title-light {
+      font-size: 38px;
+      font-weight: 900;
+      color: #000;
+      letter-spacing: -0.5px;
+      margin-bottom: 12px;
+    }
+    .section-subtitle-light {
+      color: var(--text-dark-muted);
+      font-size: 18px;
+      line-height: 1.5;
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+    .service-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-top: 5px solid var(--primary);
+      border-radius: 16px;
+      padding: 32px 26px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+      transition: var(--transition);
       display: flex;
       flex-direction: column;
-      gap: 16px;
     }
-    .faq-box {
-      background: var(--bg-card);
-      border: 1px solid var(--bg-card-border);
-      border-radius: var(--radius-md);
-      padding: 22px;
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+      border-top-color: #5c9638;
     }
-    .faq-box h4 {
-      font-size: 16px;
-      color: var(--primary);
-      margin-bottom: 8px;
-      font-weight: 700;
+    .service-badge {
+      display: inline-block;
+      align-self: flex-start;
+      background: rgba(120, 183, 79, 0.15);
+      color: #4b802d;
+      font-size: 12px;
+      font-weight: 800;
+      padding: 4px 10px;
+      border-radius: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 14px;
     }
-    .faq-box p {
-      font-size: 14px;
-      color: var(--text-muted);
+    .service-title {
+      font-size: 21px;
+      font-weight: 800;
+      color: #000000;
+      margin-bottom: 12px;
+      line-height: 1.25;
+    }
+    .service-text {
+      color: #58585A;
+      font-size: 14.5px;
       line-height: 1.6;
     }
 
-    /* FINAL BANNER */
-    .final-banner {
-      background: #000;
-      padding: 70px 20px;
-      text-align: center;
+    /* METHOD / 3 PASOS (DARK SECTION) */
+    .section-dark {
+      background-color: #0c100d;
+      padding: 90px 0;
+      position: relative;
     }
-    .final-box {
-      max-width: 800px;
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+    .step-card {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(120, 183, 79, 0.25);
+      border-radius: 16px;
+      padding: 38px 26px;
+      text-align: center;
+      position: relative;
+      transition: var(--transition);
+    }
+    .step-card:hover {
+      border-color: var(--primary);
+      background: rgba(120, 183, 79, 0.05);
+      transform: translateY(-4px);
+    }
+    .step-num {
+      width: 52px;
+      height: 52px;
+      line-height: 52px;
+      border-radius: 50%;
+      background: var(--primary);
+      color: #000;
+      font-weight: 900;
+      font-size: 22px;
+      margin: 0 auto 20px;
+      box-shadow: 0 4px 15px var(--primary-glow);
+    }
+    .step-title {
+      color: #FFFEF8;
+      font-size: 21px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    .step-text {
+      color: #A0A0A0;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    /* FAQ ACCORDION (LIGHT SECTION) */
+    .faq-section {
+      background: var(--bg-light);
+      padding: 90px 0;
+      color: #000;
+    }
+    .faq-container {
+      max-width: 820px;
       margin: 0 auto;
-      background: var(--bg-card);
+    }
+    .accordion {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .accordion-item {
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      background: #ffffff;
+      overflow: hidden;
+      transition: var(--transition);
+    }
+    .accordion-item:hover {
+      border-color: #cbd5e1;
+    }
+    .accordion-header {
+      padding: 20px 24px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 700;
+      font-size: 16.5px;
+      color: #1a1a1a;
+      user-select: none;
+      transition: var(--transition);
+    }
+    .accordion-header:hover {
+      color: #5c9638;
+    }
+    .accordion-icon {
+      font-size: 22px;
+      font-weight: 400;
+      color: var(--primary);
+      transition: transform 0.25s ease;
+    }
+    .accordion-item.active .accordion-icon {
+      transform: rotate(45deg);
+    }
+    .accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+      background: #f8fafc;
+      padding: 0 24px;
+    }
+    .accordion-item.active .accordion-content {
+      padding: 0 24px 20px;
+    }
+    .accordion-content p {
+      color: #58585A;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    /* FINAL CTA BANNER */
+    .final-cta-section {
+      padding: 70px 0 90px;
+      background: var(--bg-dark);
+    }
+    .final-card {
+      background: linear-gradient(135deg, #0f1510 0%, #060907 100%);
       border: 2px solid var(--primary);
-      border-radius: var(--radius-lg);
-      padding: 50px 30px;
-    }
-    .final-box h2 {
-      font-size: 34px;
-      font-weight: 800;
-      margin-bottom: 14px;
-    }
-    .final-box h2 span { color: var(--primary); }
-    .final-box p {
-      font-size: 16px;
-      color: var(--text-muted);
-      margin-bottom: 28px;
-    }
-
-    /* FOOTER */
-    .footer {
-      background: #000;
-      border-top: 1px solid rgba(255,255,255,0.08);
-      padding: 30px 20px;
+      border-radius: 24px;
+      padding: 60px 30px;
       text-align: center;
-      font-size: 13px;
-      color: #71717a;
+      max-width: 1000px;
+      margin: 0 auto;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7);
+    }
+    .final-tag {
+      display: inline-block;
+      background: var(--primary);
+      color: #000;
+      font-weight: 800;
+      font-size: 12px;
+      padding: 4px 14px;
+      border-radius: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 16px;
+    }
+    .final-title {
+      font-size: 38px;
+      font-weight: 900;
+      color: #FFFEF8;
+      margin-bottom: 14px;
+      letter-spacing: -0.5px;
+    }
+    .final-subtitle {
+      color: #A0A0A0;
+      font-size: 17px;
+      max-width: 650px;
+      margin: 0 auto 35px;
+    }
+    .final-footer-text {
+      color: #676767;
+      font-size: 14px;
+      margin-top: 24px;
     }
 
-    .wa-float {
+    /* FLOATING WHATSAPP BUTTON */
+    .floating-wa {
       position: fixed;
-      bottom: 24px;
-      right: 24px;
-      z-index: 999;
+      bottom: 25px;
+      right: 25px;
       background: #25D366;
       color: #fff;
-      width: 58px;
-      height: 58px;
-      border-radius: var(--radius-pill);
+      width: 62px;
+      height: 62px;
+      border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4);
+      box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
+      z-index: 999;
+      transition: var(--transition);
     }
-    .wa-float svg { width: 30px; height: 30px; fill: currentColor; }
+    .floating-wa:hover {
+      transform: scale(1.1);
+      box-shadow: 0 14px 30px rgba(37, 211, 102, 0.6);
+    }
+    .floating-wa svg {
+      width: 34px;
+      height: 34px;
+      fill: currentColor;
+    }
 
-    @media (max-width: 768px) {
-      .topbar { display: none; }
-      .hero-act-grid { grid-template-columns: 1fr; }
-      .hero-act h1 { font-size: 34px; }
-      .pillars-grid { grid-template-columns: 1fr; }
+    /* FOOTER */
+    footer {
+      background: #000;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 30px 20px;
+      text-align: center;
+      color: #718096;
+      font-size: 13px;
+    }
+    footer a {
+      color: var(--primary);
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 992px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      .services-grid, .steps-grid, .gallery-grid {
+        grid-template-columns: 1fr;
+      }
+      .hero-title {
+        font-size: 34px;
+      }
+      .nav-links {
+        display: none;
+      }
+    }
+    @media (max-width: 576px) {
+      .hero-title {
+        font-size: 30px;
+      }
+      .topbar {
+        display: none;
+      }
     }
   </style>
 </head>
@@ -395,88 +787,295 @@
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
-  <aside class="topbar">
+  <!-- TOPBAR -->
+  <aside aria-label="Información de contacto y sede" class="topbar">
     <div class="topbar-container">
-      <span>📍 Gral. Machado 944, 1° Piso, Morón Centro</span>
-      <span>WhatsApp Gym: 11 5615-7093</span>
+      <div class="topbar-brand">
+        INGUZ BOX | Espacio de Entrenamiento, Salud y Bienestar
+      </div>
+      <div class="topbar-loc">
+        📍 Gral. Machado 944, 1° Piso (Morón Centro - a 2 cuadras de la estación)
+      </div>
     </div>
   </aside>
 
+  <!-- NAVBAR -->
   <header class="header">
     <div class="nav-container">
       <a href="../index.html" class="logo-wrapper">
         <img src="../images/cropped-logo.png" alt="Inguz Box Logo" class="logo-img">
-        <span class="brand-pill">Yoga & Stretching</span>
+        INGUZ BOX <span class="logo-badge">Yoga & Stretching</span>
       </a>
-      <a href="https://forms.kommo.com/rcdcdld" target="_blank" rel="noopener noreferrer" class="nav-cta">
-        Inscribirme
-      </a>
+      <nav aria-label="Navegación principal">
+        <ul class="nav-links">
+          <li><a href="#showcase">Gabinete</a></li>
+          <li><a href="#modalidades">Modalidades</a></li>
+          <li><a href="#metodo">El Método</a></li>
+          <li><a href="#faqs">Preguntas</a></li>
+          <li>
+            <a href="https://forms.kommo.com/rcdcdld" target="_blank" rel="noopener noreferrer" class="btn-nav">
+              Clase Gratis
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
   </header>
 
-  <section class="hero-act">
-    <div class="hero-act-grid">
+  <!-- HERO SECTION -->
+  <main>
+  <section class="hero" id="inicio">
+    <div class="container hero-grid">
+      <!-- Columna Texto -->
       <div>
         <a href="../index.html#disciplinas" class="back-link">← Volver a todas las disciplinas</a>
-        <div class="act-badge">Bienestar & Movilidad • Todos los Niveles</div>
-        <h1>Yoga & Stretching <span>Equilibrio, Movilidad y Conexión en Morón</span></h1>
-        <p>Encontrá tu espacio de calma en medio del ritmo diario. Posturas de elongación profunda, respiración consciente y descompresión muscular.</p>
-        <ul class="act-benefits">
-          <li><span>✓</span> Aumento significativo del rango de movimiento y movilidad articular.</li><li><span>✓</span> Descompresión de tensiones físicas y serenidad mental.</li><li><span>✓</span> Mejora en la postura corporal diaria y prevención de contracturas.</li><li><span>✓</span> Ideal como recuperación activa para quienes entrenan musculación o cross.</li>
+        <div>
+          <span class="hero-pill">🧘 Flexibilidad & Conexión Mente-Cuerpo • Morón Centro</span>
+        </div>
+        <h1 class="hero-title">
+          Recuperá tu movilidad y liberá tensiones: <span>Yoga & Stretching en Morón</span>
+        </h1>
+        <p class="hero-subtitle">
+          Un espacio de calma en Morón Centro para conectar con tu respiración, estirar cadenas musculares acortadas y aliviar contracturas lumbares y cervicales de forma guiada.
+        </p>
+
+        <ul class="hero-features">
+          <li><span class="check-icon">✓</span> Elongación activa y pasiva para ganar amplitud en caderas, piernas y hombros</li>
+          <li><span class="check-icon">✓</span> Asanas de Hatha y Vinyasa adaptadas a tu nivel de flexibilidad actual</li>
+          <li><span class="check-icon">✓</span> Técnicas de respiración (pranayama) que calman el sistema nervioso y bajan el estrés</li>
+          <li><span class="check-icon">✓</span> El complemento perfecto para deportistas y personas con rutinas sedentarias</li>
         </ul>
-        <div class="act-actions">
-          <a href="https://forms.kommo.com/rcdcdld" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-            Reservar Clase Gratis
+
+        <div>
+          <div class="hero-actions">
+            <a href="https://forms.kommo.com/rcdcdld" target="_blank" rel="noopener noreferrer" class="cta-btn" id="hero-cta-btn">
+              RESERVAR CLASE GRATIS
+            </a>
+            <a href="https://wa.me/5491156157093?text=Hola!%20Quiero%20consultar%20por%20la%20clase%20de%20Yoga%20%26%20Stretching" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+              Consultar por WhatsApp
+            </a>
+          </div>
+          <p class="cta-subtext">
+            ⚡ Cupos limitados por turno • Sede Morón Centro (Gral. Machado 944, 1° Piso)
+          </p>
+        </div>
+      </div>
+
+      <!-- Columna Tarjeta de la Disciplina (Mismo formato y proporción que Masajes / Nutrición / Depilación) -->
+      <div>
+        <div class="profile-card">
+          <div class="profile-img-wrap">
+            <img src="../images/yoga.webp" alt="Yoga y Stretching en Inguz Box Morón">
+            <span class="profile-badge-floating">Bienestar Integral</span>
+          </div>
+          <h2 class="profile-title">Yoga & Elongación</h2>
+          <p class="profile-spec">Salud Articular • Morón Centro</p>
+          <p class="profile-desc">
+            Encontrá el equilibrio entre la firmeza corporal y la serenidad mental en un espacio cálido y respetuoso.
+          </p>
+          <div class="profile-location">
+            <strong>📍 Sede Central Morón:</strong>
+            <span>Gral. Machado 944, 1° Piso (a 2 cuadras de la estación)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SHOWCASE MULTIMEDIA (FOTOS REALES DE LA ACTIVIDAD) -->
+  <section class="gallery-section" id="showcase">
+    <div class="container">
+      <div class="section-header-dark">
+        <h2 class="section-title-dark">Posturas, Movilidad y Calma</h2>
+        <p class="section-subtitle-dark">Espacio preparado para la concentración y la relajación profunda.</p>
+      </div>
+      <div class="gallery-grid">
+        
+        <div class="gallery-item">
+          <div class="gallery-media">
+            <img src="../images/yoga.webp" alt="Alineación Consciente">
+          </div>
+          <div class="gallery-info">
+            <div class="gallery-tag">Asanas y Postura</div>
+            <h3 class="gallery-heading">Alineación Consciente</h3>
+            <p class="gallery-p">Posturas que fortalecen la musculatura postural y alargan la columna vertebral.</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-media">
+            <img src="../images/stretching.webp" alt="Alivio Miofascial">
+          </div>
+          <div class="gallery-info">
+            <div class="gallery-tag">Stretching Global</div>
+            <h3 class="gallery-heading">Alivio Miofascial</h3>
+            <p class="gallery-p">Estiramientos profundos con apoyos de bloques, cinturones y colchonetas de alta densidad.</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gallery-media">
+            <img src="../images/comunidad_5.jpg" alt="Relajación Guiada">
+          </div>
+          <div class="gallery-info">
+            <div class="gallery-tag">Paz y Enfoque</div>
+            <h3 class="gallery-heading">Relajación Guiada</h3>
+            <p class="gallery-p">Momentos de quietud para desconectar de las pantallas y reencontrarte con vos mismo.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATALOG / MODALITIES SECTION (LIGHT THEME #FFFEF8) -->
+  <section class="section-light" id="modalidades">
+    <div class="container">
+      <div class="section-header-light">
+        <h2 class="section-title-light">Ejes de Nuestra Práctica de Yoga y Stretching</h2>
+        <p class="section-subtitle-light">Una experiencia diseñada para devolverle la elasticidad y la calma a tu cuerpo.</p>
+      </div>
+      <div class="services-grid">
+        
+        <div class="service-card">
+          <span class="service-badge">Fuerza Isométrica</span>
+          <h3 class="service-title">Hatha Yoga y Asanas</h3>
+          <p class="service-text">Posturas sostenidas que construyen fuerza en piernas y espalda mientras cultivan concentración mental y equilibrio.</p>
+        </div>
+        <div class="service-card">
+          <span class="service-badge">Descompresión</span>
+          <h3 class="service-title">Stretching Postural Global</h3>
+          <p class="service-text">Trabajo específico para liberar el psoas, isquiotibiales y zona escapular acortada por largas horas de estar sentado.</p>
+        </div>
+        <div class="service-card">
+          <span class="service-badge">Sistema Nervioso</span>
+          <h3 class="service-title">Pranayama y Relajación</h3>
+          <p class="service-text">Ejercicios de respiración diafragmática para regular el pulso cardíaco, oxigenar tejidos y mejorar la calidad de sueño.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- METHOD / 3 PASOS (DARK SECTION) -->
+  <section class="section-dark" id="metodo">
+    <div class="container">
+      <div class="section-header-dark">
+        <h2 class="section-title-dark">¿Cómo se desarrolla la práctica?</h2>
+        <p class="section-subtitle-dark">Un viaje progresivo de afuera hacia adentro, respetando tus tiempos anatómicos.</p>
+      </div>
+      <div class="steps-grid">
+        
+        <div class="step-card">
+          <div class="step-num">01</div>
+          <h3 class="step-title">Toma de Conciencia</h3>
+          <p class="step-text">Centrado inicial en colchoneta conectando con el ritmo natural de tu respiración y relajando la mente.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">02</div>
+          <h3 class="step-title">Secuencia de Posturas</h3>
+          <p class="step-text">Flujo progresivo de asanas y estiramientos respetando los rangos seguros de cada articulación.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-num">03</div>
+          <h3 class="step-title">Savasana Final</h3>
+          <p class="step-text">Descanso profundo guiado en colchoneta para asimilar los beneficios fisiológicos de la práctica.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ SECTION (LIGHT THEME #FFFEF8 CON ACORDEÓN INTERACTIVO) -->
+  <section class="faq-section" id="faqs">
+    <div class="container faq-container">
+      <div class="section-header-light">
+        <h2 class="section-title-light">Preguntas Frecuentes sobre Yoga & Stretching</h2>
+        <p class="section-subtitle-light">Todo lo que necesitás saber antes de tu primera clase en Inguz Box.</p>
+      </div>
+      <div class="accordion">
+        
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <span>¿Tengo que ser flexible para poder empezar a hacer yoga?</span>
+            <span class="accordion-icon">+</span>
+          </div>
+          <div class="accordion-content">
+            <p>No, justamente practicás para ganar flexibilidad con el tiempo. Nadie te va a exigir posturas forzadas; trabajás siempre respetando tu propio cuerpo.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <span>¿Tengo que llevar mi propio mat o colchoneta?</span>
+            <span class="accordion-icon">+</span>
+          </div>
+          <div class="accordion-content">
+            <p>El gimnasio cuenta con colchonetas y elementos de apoyo limpios. Si preferís traer tu propio mat por gusto personal, podés hacerlo con total libertad.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <span>¿Puedo practicar si tengo dolores de espalda o contracturas?</span>
+            <span class="accordion-icon">+</span>
+          </div>
+          <div class="accordion-content">
+            <p>Sí. Siempre avisale al profesor antes de comenzar para que te indique adaptaciones específicas que cuiden y alivien tu columna en cada ejercicio.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BANNER FINAL CTA -->
+  <section class="final-cta-section">
+    <div class="container">
+      <div class="final-card">
+        <span class="final-tag">¡Primera Clase sin Costo!</span>
+        <h2 class="final-title">Regalate una hora de calma y bienestar</h2>
+        <p class="final-subtitle">Vení a reconectar con tu cuerpo en las clases de Yoga y Stretching de Inguz Box Morón Centro.</p>
+        <div class="hero-actions" style="justify-content: center;">
+          <a href="https://forms.kommo.com/rcdcdld" target="_blank" rel="noopener noreferrer" class="cta-btn" id="final-cta-btn">
+            RESERVAR MI CLASE GRATIS
           </a>
-          <a href="https://wa.me/5491156157093?text=Hola!%20Quiero%20consultar%20por%20la%20clase%20de%20Yoga & Stretching" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+          <a href="https://wa.me/5491156157093?text=Hola!%20Quiero%20consultar%20por%20la%20clase%20de%20Yoga%20%26%20Stretching" target="_blank" rel="noopener noreferrer" class="btn-secondary">
             Consultar por WhatsApp
           </a>
         </div>
-      </div>
-      <div class="act-img-box">
-        <img src="../images/box_action_2.jpg" alt="Yoga & Stretching en Inguz Box Morón">
-      </div>
-    </div>
-  </section>
-
-  <section class="method-section">
-    <div class="section-header">
-      <h2>¿Cómo es una sesión de Yoga & Stretching?</h2>
-      <p>Entrenamiento planificado paso a paso para que entrenes seguro y con la máxima eficacia.</p>
-    </div>
-    <div class="pillars-grid">
-      <div class="pillar-card"><div class="pillar-num">01</div><h3>Pranayama y Enfoque</h3><p>Ejercicios de respiración para calmar el sistema nervioso y oxigenar el cuerpo.</p></div><div class="pillar-card"><div class="pillar-num">02</div><h3>Asanas y Secuencias</h3><p>Fluidez de posturas para ganar equilibrio, estabilidad y elongación.</p></div><div class="pillar-card"><div class="pillar-num">03</div><h3>Relajación Profunda</h3><p>Cierre con relajación guiada (Savasana) para asimilar el trabajo de la sesión.</p></div>
-    </div>
-  </section>
-
-  <section class="faq-dark">
-    <h2>Preguntas Frecuentes sobre Yoga & Stretching</h2>
-    <div class="faq-list">
-      <div class="faq-box"><h4>¿Soy muy duro/a para hacer Yoga?</h4><p>Al contrario: precisamente quienes sienten rigidez corporal son quienes más se benefician y más rápido notan la diferencia.</p></div>
-    </div>
-  </section>
-
-  <section class="final-banner">
-    <div class="final-box">
-      <h2>PROBÁ Yoga & Stretching <span>EN INGUZ BOX</span></h2>
-      <p>Vení a Morón Centro a probar tu primera clase sin costo y sentí la energía de nuestra comunidad.</p>
-      <div class="act-actions" style="justify-content: center;">
-        <a href="https://forms.kommo.com/rcdcdld" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-          Inscribirme / Clase Gratis
-        </a>
-        <a href="https://wa.me/5491156157093?text=Hola!%20Quiero%20sumarme%20a%20Yoga & Stretching" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
-          Escribir al WhatsApp Gym
-        </a>
+        <p class="final-footer-text">
+          Inguz Box Training • Gral. Machado 944, 1° Piso, Morón Centro • Tel: 11-5615-7093
+        </p>
       </div>
     </div>
   </section>
+  </main>
 
-  <footer class="footer">
-    <p>© 2026 Inguz Box Training • Gral. Machado 944, Morón Centro • Tel: 11-5615-7093</p>
+  <!-- FLOATING WHATSAPP -->
+  <a href="https://wa.me/5491156157093?text=Hola!%20Quiero%20consultar%20por%20la%20clase%20de%20Yoga%20%26%20Stretching" target="_blank" rel="noopener noreferrer" class="floating-wa" title="Escribinos por WhatsApp" id="floating-wa-btn" aria-label="WhatsApp">
+    <svg viewBox="0 0 32 32">
+      <path d="M16 2a13.9 13.9 0 0 0-12 21l-1.9 6.9 7.1-1.8A13.9 13.9 0 1 0 16 2zm0 25.5a11.5 11.5 0 0 1-5.9-1.6l-.4-.3-4.4 1.1 1.2-4.3-.3-.5a11.6 11.6 0 1 1 9.8 5.6zm6.4-8.6c-.3-.2-2-1-2.3-1.1s-.5-.2-.7.2-.8 1-.9 1.2-.4.2-.7 0a9.2 9.2 0 0 1-2.7-1.7 10.3 10.3 0 0 1-1.9-2.3c-.2-.3 0-.5.2-.7s.3-.4.5-.6.2-.3.3-.5a.6.6 0 0 0 0-.6c-.1-.2-.7-1.7-1-2.3s-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.7 3.7 0 0 0-1.2 2.8 6.5 6.5 0 0 0 1.4 3.4 14.8 14.8 0 0 0 5.7 5.1 13.4 13.4 0 0 0 1.9.7 4.6 4.6 0 0 0 2.1.1 3.5 3.5 0 0 0 2.3-1.6 2.8 2.8 0 0 0 .2-1.6c-.1-.2-.4-.3-.7-.5z"/>
+    </svg>
+  </a>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2026 Inguz Box Training — Gral. Machado 944, Morón Centro. Todos los derechos reservados.</p>
   </footer>
 
-  <a href="https://wa.me/5491156157093?text=Hola!%20Quiero%20consultar%20por%20Yoga & Stretching" target="_blank" rel="noopener noreferrer" class="wa-float" aria-label="WhatsApp">
-    <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
-  </a>
+  <!-- INTERACTIVE ACCORDION SCRIPT -->
+  <script>
+    document.querySelectorAll('.accordion-header').forEach(header => {
+      header.addEventListener('click', () => {
+        const item = header.parentElement;
+        const isActive = item.classList.contains('active');
+        
+        document.querySelectorAll('.accordion-item').forEach(i => {
+          i.classList.remove('active');
+          const content = i.querySelector('.accordion-content');
+          if (content) content.style.maxHeight = null;
+        });
+
+        if (!isActive) {
+          item.classList.add('active');
+          const content = item.querySelector('.accordion-content');
+          content.style.maxHeight = content.scrollHeight + 30 + 'px';
+        }
+      });
+    });
+  </script>
 </body>
 </html>
